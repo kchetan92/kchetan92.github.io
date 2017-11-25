@@ -13,20 +13,21 @@ $(document).foundation();
 
 $(document).ready(function(){
 	var bigLogo = $('.big-logo')[0];
+	var bigClass = 'bigg'
 	var headerHeight = bigLogo.getBoundingClientRect().height;
 	var showBig = true;
 
-	// $(window).on('scroll', function(){
-	// 	if(showBig && bigLogo.getBoundingClientRect().top + headerHeight < 0)	{
-	// 		$('.logo-container').toggleClass('big');
-	// 		showBig = false;
-	// 		console.log('show Big')
-	// 	}	else if(!showBig && bigLogo.getBoundingClientRect().top + headerHeight > 0)	{
-	// 		$('.logo-container').toggleClass('big')
-	// 		showBig = true
-	// 		console.log('show small')
-	// 	}
-	// })
+	$(window).on('scroll', function(){
+		if(showBig && bigLogo.getBoundingClientRect().top + headerHeight < 0)	{
+			$('.logo-container').toggleClass(bigClass);
+			showBig = false;
+			console.log('show Big')
+		}	else if(!showBig && bigLogo.getBoundingClientRect().top + headerHeight > 0)	{
+			$('.logo-container').toggleClass(bigClass);
+			showBig = true
+			console.log('show small')
+		}
+	})
 
 
 })
