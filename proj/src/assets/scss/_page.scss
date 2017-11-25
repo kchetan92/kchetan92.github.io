@@ -1,0 +1,62 @@
+nav ul{
+	text-align: right;
+	li {
+		padding: 0 5px;
+		display: inline-block;
+	}
+}
+
+#intro {
+	padding-top: 20px;
+	height: 100vh;
+
+	.logo img {
+	height: 80px;
+	width: auto;
+	}
+}
+
+.v1_bg {
+	background-image: url("../img/sunrise.png");
+}
+
+.bg_class {
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: -1;
+}
+
+.v1 .hello {
+	padding-top: 25vh;
+	padding-left: 45vw;
+}
+
+.hello {
+	line-height: 1.5;
+	.hi {
+		font-size: 40px;
+		margin: 0;
+	}
+	.name {
+		font-size: 60px;
+		font-weight: bold;
+		margin: 0;
+	}
+	.mission {
+		font-size: 20px;
+		width: 500px;
+		margin: 15px 0 0;
+	}
+}
+
+.projects {
+	background-color: white;
+	margin-top: -30px;
+	padding: 40px 20px;
+	border-radius: 15px 15px 0 0;
+	.title {
+		
+	}
+}
