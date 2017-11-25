@@ -7,12 +7,46 @@ nav ul{
 }
 
 #intro {
-	padding-top: 20px;
 	height: 100vh;
 
-	.logo img {
-	height: 80px;
-	width: auto;
+	.logo {
+		padding-bottom: 20px;
+		img {
+		height: 80px;
+		width: auto;
+	}
+}
+	.big-logo {
+		padding-top: 20px;
+	}
+
+	.small-logo {
+		padding-top: 20px;
+		background: white;
+		.logo img {
+			height: 30px;
+		}
+		nav ul {
+			margin: 0;
+		}
+	}
+}
+
+.logo-container{
+	.big-logo{
+		display: none
+	}
+	.small-logo {
+		display: smallf;
+	}
+}
+
+.logo-container.bigg{
+	.big-logo{
+		display: block
+	}
+	.small-logo {
+		display: none;
 	}
 }
 
@@ -57,6 +91,6 @@ nav ul{
 	padding: 40px 20px;
 	border-radius: 15px 15px 0 0;
 	.title {
-		
+
 	}
 }
