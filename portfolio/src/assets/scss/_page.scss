@@ -1,0 +1,34 @@
+$theme-green: #40bca9;
+$theme-orange: #f54123;
+
+.logo {
+	width: 100px;
+	height: auto;
+}
+
+.title-image img {
+	max-width: 120px;
+}
+
+.tile {
+	.image {
+		width: 100%;
+		height: 30vh;
+	}
+	.heading	{
+		font-weight: bold;
+	}
+	.description {
+
+	}
+}
+
+.image.walk	{
+	background: url("/assets/img/window.jpg");
+	background-size: cover;
+	background-position: center bottom;
+}
+
+#about {
+	background-color: $theme-green;
+}
