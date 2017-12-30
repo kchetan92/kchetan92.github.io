@@ -43,6 +43,12 @@ $bold-weight: 700;
 	max-width: 120px;
 }
 
+.large-7.tile {
+	.description {
+		column-count: 2;
+	}
+}
+
 .tile {
 	position: relative;
 	margin-bottom: 100px;
@@ -57,18 +63,20 @@ $bold-weight: 700;
 	}
 	.description {
 		padding-bottom: 30px;
-		font-weight: 14px;
+		font-size: 14px;
 	}
 	.link {
 		position: absolute;
 		bottom: 0;
 		right: 0;
 		padding: 5px 0 5px 0;
-		font-weight: 14px;
 		a {
 			text-decoration: none;
 			color: #000;
-			font-weight: $regular-weight;
+			font-weight: $medium-weight;
+		}
+		a:hover {
+			color: $theme-orange;
 		}
 	}
 
@@ -95,5 +103,67 @@ $bold-weight: 700;
 	.text {
 		padding-top: 40px;
 		font-size: 14px;
+		column-count: 2;
+	}
+	.buttons {
+		margin-top: 36px;
+		.picture {
+			display: inline-block;
+			background-repeat: no-repeat !important;
+		}
+		.instagram .picture{
+			background: url("/assets/img/instagram_black.svg");
+			width: 16px;
+			height: 16px;
+		}
+		.instagram:hover .picture {
+			background: url("/assets/img/instagram_white.svg");
+		}
+		.instagram.picture-links-container {
+			padding-top: 6px;
+		}
+		.linkedin .picture {
+			background: url("/assets/img/linkedin_black.svg");
+			width: 16px;
+			height: 16px;
+		}
+		.linkedin:hover .picture {
+			background: url("/assets/img/linkedin_white.svg");
+		}
+		.linkedin.picture-links-container {
+			padding-top: 6px;
+		}
+		.picture-links-container {
+			display: block;
+			height: 38px;
+			width: 38px;
+			border: 3px solid black;
+			text-align: center;
+			&:hover {
+				border-color: white;
+			}
+		}
+		.left .picture-links-container {
+			float: left;
+			margin-right: 22px;
+		}
+		.right	{
+			float: right;
+			.resume {
+				color: black;
+				font-weight: $bold-weight;
+				text-decoration: none;
+				font-size: 20px;
+				border: 3px solid black;
+				width: 105px;
+				display: inline-block;
+				text-align: center;
+				height: 38px;
+				&:hover {
+					color: white;
+					border-color: white;
+				}
+			}
+		}
 	}
 }
