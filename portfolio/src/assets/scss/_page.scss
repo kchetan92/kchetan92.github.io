@@ -167,3 +167,61 @@ $bold-weight: 700;
 		}
 	}
 }
+
+///////////
+//
+// Project Page
+//
+///////////
+
+.floating-header {
+	background: $theme-grey-bg;
+	padding: 25px 0;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	transition: top 0.4s ease 0s;
+}
+
+.floating-header.hide {
+	top: -90px;
+}
+
+.logo-horizontal {
+	width: 110px;
+	height: auto;
+}
+
+
+#article {
+	margin-top: 150px;
+}
+
+.article {
+	.title {
+		font-size: 50px;
+		text-align: center;
+	}
+	p {
+		font-size: 20px;
+	}
+	margin-top: 30px;
+}
+
+.article-image {
+	width: 100%;
+	height: 300px;
+	background-size: contain !important;
+}
+
+
+
+
+
+
+
+
+
+
+
