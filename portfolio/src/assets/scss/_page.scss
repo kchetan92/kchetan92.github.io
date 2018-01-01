@@ -8,7 +8,9 @@ $bold-weight: 700;
 #hello {
 	background-color: $theme-grey-bg;
 	padding-top: 50px;
-
+	@include breakpoint(medium down) {
+		padding-top: 25px;
+	}
 	.message {
 		font-size: 20px;
 		padding-top: 45px;
@@ -37,10 +39,17 @@ $bold-weight: 700;
 .logo {
 	width: 90px;
 	height: auto;
+	@include breakpoint(medium down) {
+		width: 120px;
+	}
 }
 
 .title-image img {
 	max-width: 120px;
+	@include breakpoint(medium down) {
+		max-width: none;
+		height: 60px;
+	}
 }
 
 .large-7.tile {
