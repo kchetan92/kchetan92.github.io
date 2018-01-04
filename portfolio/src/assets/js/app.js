@@ -23,11 +23,9 @@ $(document).ready(function(){
 			var articleTop = article[0].getBoundingClientRect().top;
 
 			if(articleTop < currentTop || articleTop == 0) {
-				header.addClass('hide');
-				console.log('hidden');
+				header.addClass('hidie');
 			} else if (articleTop > currentTop)	{
-				header.removeClass('hide')
-				console.log('show');
+				header.removeClass('hidie');
 			}
 
 			currentTop = articleTop;
