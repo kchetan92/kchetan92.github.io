@@ -11,7 +11,9 @@ window.$ = $;
 
 // $(document).foundation();
 
-$(document).ready(function(){
+import Wallop from 'Wallop';
+
+function initHeader(){
 	var header = $('.floating-header');
 	var article = $('#article')
 
@@ -30,8 +32,38 @@ $(document).ready(function(){
 
 			currentTop = articleTop;
 
-		}, 1000)
+		}, 300)
 	}
+}
+
+function initSlider(){
+
+	var wallop = new Wallop(document.querySelector('.Wallop'));
+
+	// autoplay(3000);
+
+	// function autoplay(interval) {
+	//   var lastTime = 0;  
+	  
+	//   function frame(timestamp) {
+	//     var update = timestamp - lastTime >= interval;
+	  
+	//     if (update) {
+	//       wallop.next();
+	//       lastTime = timestamp;
+	//     }
+	  
+	//     requestAnimationFrame(frame);
+	//   }
+
+	//   requestAnimationFrame(frame);
+	// };
+}
+
+$(document).ready(function(){
+
+	initHeader();
+	initSlider();
 
 })
 
