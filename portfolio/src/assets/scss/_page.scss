@@ -231,7 +231,13 @@ $bold-weight: 700;
 	background-size: contain !important;
 }
 
-.article-image {
-	
+.image-paper-prototype > div {
+	display: inline-block;
+	padding: 0 10px 10px 0;
+	background-size: contain;
+	height: 510px;
+	background-repeat: no-repeat;
+	&:hover {
+		cursor: zoom-in;
+	}
 }
-
