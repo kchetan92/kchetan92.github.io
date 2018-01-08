@@ -93,33 +93,32 @@ function initHeader(){
 
 function initSlider(){
 
-    var wallop = document.querySelector('.Wallop')
+    function autoplay(interval) {
+      var lastTime = 0;  
+      
+      function frame(timestamp) {
+        var update = timestamp - lastTime >= interval;
+      
+        if (update) {
+          wallop.next();
+          lastTime = timestamp;
+        }
+      
+        requestAnimationFrame(frame);
+      }
+
+      requestAnimationFrame(frame);
+    };
+
+    var wallop = document.querySelector('.Wallop');
 
     if(wallop) {
         var wallop = new Wallop(wallop);
-    }
+        var playTime = document.querySelector('.Wallop').getAttribute('autoplay');
 
-	function autoplay(interval) {
-	  var lastTime = 0;  
-	  
-	  function frame(timestamp) {
-	    var update = timestamp - lastTime >= interval;
-	  
-	    if (update) {
-	      wallop.next();
-	      lastTime = timestamp;
-	    }
-	  
-	    requestAnimationFrame(frame);
-	  }
-
-	  requestAnimationFrame(frame);
-	};
-
-    var playTime = document.querySelector('.Wallop').getAttribute('autoplay');
-
-    if(playTime) {
-        autoplay(playTime);
+        if(playTime) {
+            autoplay(playTime);
+        }
     }
 
     zoomEnable.init('.zoom-us');
