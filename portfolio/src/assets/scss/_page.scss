@@ -103,6 +103,12 @@ $bold-weight: 700;
 	background-position: center bottom;
 }
 
+.image.brand	{
+	background: url("/assets/img/brand/brand_thumb.jpg");
+	background-size: cover;
+	background-position: center bottom;
+}
+
 #projects {
 	padding-top: 55px;
 	.project-tiles {
