@@ -84,6 +84,9 @@ $bold-weight: 700;
 		bottom: 0;
 		right: 0;
 		padding: 5px 0 5px 0;
+		@include breakpoint(medium down) {
+			padding-right: 0.635rem;
+		}
 		a {
 			text-decoration: none;
 			color: #000;
@@ -106,13 +109,32 @@ $bold-weight: 700;
 .image.brand	{
 	background: url("/assets/img/brand/brand_thumb.jpg");
 	background-size: cover;
-	background-position: center bottom;
+	background-position: center center;
 }
 
 #projects {
 	padding-top: 55px;
+
 	.project-tiles {
 		padding-top: 50px;
+	}
+
+	@include breakpoint(medium down) {
+		padding-top: 40px;
+		.project-tiles {
+			padding-top: 40px;
+		}
+		.grid-container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.title-image {
+			padding-left: 20px;
+		}
+		.text {
+			padding-left: 0.625rem;
+			padding-right: 0.625rem;
+		}
 	}
 }
 
@@ -241,10 +263,16 @@ $bold-weight: 700;
 
 .wasd .article-bg-image {
 	background-size: cover !important;
+	@include breakpoint(medium down) {
+		height: 53vw;	
+	}
 }
 
 .brand .article-bg-image {
 	height: 600px;
+	@include breakpoint(medium down) {
+		height: 75vw;	
+	}
 	background-size: cover;
 }
 

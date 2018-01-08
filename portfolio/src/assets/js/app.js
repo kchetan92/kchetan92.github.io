@@ -99,26 +99,30 @@ function initSlider(){
         var wallop = new Wallop(wallop);
     }
 
-	zoomEnable.init('.zoom-us');
-
-	// autoplay(3000);
-
-	// function autoplay(interval) {
-	//   var lastTime = 0;  
+	function autoplay(interval) {
+	  var lastTime = 0;  
 	  
-	//   function frame(timestamp) {
-	//     var update = timestamp - lastTime >= interval;
+	  function frame(timestamp) {
+	    var update = timestamp - lastTime >= interval;
 	  
-	//     if (update) {
-	//       wallop.next();
-	//       lastTime = timestamp;
-	//     }
+	    if (update) {
+	      wallop.next();
+	      lastTime = timestamp;
+	    }
 	  
-	//     requestAnimationFrame(frame);
-	//   }
+	    requestAnimationFrame(frame);
+	  }
 
-	//   requestAnimationFrame(frame);
-	// };
+	  requestAnimationFrame(frame);
+	};
+
+    var playTime = document.querySelector('.Wallop').getAttribute('autoplay');
+
+    if(playTime) {
+        autoplay(playTime);
+    }
+
+    zoomEnable.init('.zoom-us');
 }
 
 $(document).ready(function(){
