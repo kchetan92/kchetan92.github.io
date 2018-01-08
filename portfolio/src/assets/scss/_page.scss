@@ -157,44 +157,8 @@ $bold-weight: 700;
 			column-count: 1;
 		}
 	}
-	.buttons {
+	.sqr-buttons {
 		margin-top: 36px;
-		.picture {
-			display: inline-block;
-			background-repeat: no-repeat !important;
-		}
-		.instagram .picture{
-			background: url("/assets/img/instagram_black.svg");
-			width: 16px;
-			height: 16px;
-		}
-		.instagram:hover .picture {
-			background: url("/assets/img/instagram_white.svg");
-		}
-		.instagram.picture-links-container {
-			padding-top: 6px;
-		}
-		.linkedin .picture {
-			background: url("/assets/img/linkedin_black.svg");
-			width: 16px;
-			height: 16px;
-		}
-		.linkedin:hover .picture {
-			background: url("/assets/img/linkedin_white.svg");
-		}
-		.linkedin.picture-links-container {
-			padding-top: 6px;
-		}
-		.picture-links-container {
-			display: block;
-			height: 38px;
-			width: 38px;
-			border: 3px solid black;
-			text-align: center;
-			&:hover {
-				border-color: white;
-			}
-		}
 		.left .picture-links-container {
 			float: left;
 			margin-right: 22px;
@@ -216,6 +180,68 @@ $bold-weight: 700;
 					border-color: white;
 				}
 			}
+		}
+	}
+
+}
+
+.sqr-buttons {
+	.picture {
+		display: inline-block;
+		background-repeat: no-repeat !important;
+	}
+	.instagram .picture{
+		background: url("/assets/img/instagram_black.svg");
+		width: 16px;
+		height: 16px;
+	}
+	.instagram:hover .picture {
+		background: url("/assets/img/instagram_white.svg");
+	}
+	.instagram.picture-links-container {
+		padding-top: 6px;
+	}
+	.linkedin .picture {
+		background: url("/assets/img/linkedin_black.svg");
+		width: 16px;
+		height: 16px;
+	}
+	.linkedin:hover .picture {
+		background: url("/assets/img/linkedin_white.svg");
+	}
+	.linkedin.picture-links-container {
+		padding-top: 6px;
+	}
+	.linkedin .picture {
+		background: url("/assets/img/linkedin_black.svg");
+		width: 16px;
+		height: 16px;
+	}
+
+	.previous.arrow .picture {
+		transform: rotate(180deg);
+	}
+
+	.arrow .picture {
+		background: url("/assets/img/arrow_black.svg");
+		width: 10px;
+		height: 15px;
+	}
+	.arrow:hover .picture {
+		background: url("/assets/img/arrow_orange.svg");
+	}
+
+	.arrow.picture-links-container {
+		padding-top: 6px;
+	}
+	.picture-links-container {
+		display: block;
+		height: 38px;
+		width: 38px;
+		border: 3px solid black;
+		text-align: center;
+		&:hover {
+			border-color: white;
 		}
 	}
 }
@@ -301,6 +327,18 @@ $bold-weight: 700;
 
 .logo-gif {
 	height: 150px;
+}
+
+.wasd .sqr-buttons {
+	float: right;
+	.picture-links-container {
+		margin-left: 4	px;
+		cursor: pointer;
+		display: inline-block;
+		&:hover {
+			border-color: $theme-orange;
+		}
+	}
 }
 
 

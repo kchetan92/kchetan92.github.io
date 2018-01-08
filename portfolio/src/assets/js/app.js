@@ -129,7 +129,9 @@ $(document).ready(function(){
 	initHeader();
 	initSlider();
 
-    console.image("https://media.giphy.com/media/9LQHvkbIzTSLe/giphy.gif");
+    setTimeout(function(){ 
+        console.image("https://media.giphy.com/media/9LQHvkbIzTSLe/giphy.gif");
+    }, 5000);
     console.log("I can design and develop! Hire me for Summer 2018 Internship!");
 
 })
