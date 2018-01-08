@@ -98,7 +98,7 @@ $bold-weight: 700;
 }
 
 .image.walk	{
-	background: url("/assets/img/window.jpg");
+	background: url("/assets/img/hallway.jpg");
 	background-size: cover;
 	background-position: center bottom;
 }
@@ -223,12 +223,23 @@ $bold-weight: 700;
 		font-size: 20px;
 	}
 	margin-top: 30px;
+	h2 {
+		margin-top: 60px;
+	}
 }
 
 .article-bg-image {
 	width: 100%;
-	height: 300px;
-	background-size: contain !important;
+	height: 400px;
+}
+
+.wasd .article-bg-image {
+	background-size: cover !important;
+}
+
+.brand .article-bg-image {
+	height: 600px;
+	background-size: cover;
 }
 
 .image-paper-prototype > div {
@@ -237,7 +248,19 @@ $bold-weight: 700;
 	background-size: contain;
 	height: 510px;
 	background-repeat: no-repeat;
+}
+
+.zoom-us {
 	&:hover {
 		cursor: zoom-in;
 	}
 }
+
+.logo-gif {
+	height: 150px;
+}
+
+
+
+
+

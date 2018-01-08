@@ -2,6 +2,8 @@ import $ from 'jquery';
 import whatInput from 'what-input';
 window.$ = $;
 
+import './console_image'
+
 // import Foundation from 'foundation-sites';
 // // If you want to pick and choose which modules to include, comment out the above and uncomment
 // // the line below
@@ -99,8 +101,9 @@ window.$ = $;
         zoomEnable.init = function(el) {
 
             var images = document.querySelectorAll(el);
+
             if(!images) {
-                console.log('No images to zoom');
+                // console.log('No images to zoom');
                 return;
             }
 
@@ -181,7 +184,11 @@ function initHeader(){
 
 function initSlider(){
 
-	var wallop = new Wallop(document.querySelector('.Wallop'));
+    var wallop = document.querySelector('.Wallop')
+
+    if(wallop) {
+        var wallop = new Wallop(wallop);
+    }
 
 	zoomEnable.init('.zoom-us');
 
@@ -203,15 +210,15 @@ function initSlider(){
 
 	//   requestAnimationFrame(frame);
 	// };
-
-    console.log("And I can code too! I have worked as a web developer before and I am currently getting my hand dirty with Python and PHP now!");
-    console.log("I am looking for summer internships for Summer 2018!");
 }
 
 $(document).ready(function(){
 
 	initHeader();
 	initSlider();
+
+    console.image("https://media.giphy.com/media/9LQHvkbIzTSLe/giphy.gif");
+    console.log("I can design and develop! Hire me for Summer 2018 Internship!");
 
 })
 
