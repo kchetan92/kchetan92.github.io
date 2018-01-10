@@ -118,6 +118,12 @@ $bold-weight: 700;
 	background-position: center center;
 }
 
+.image.water	{
+	background: url("/assets/img/water_pipes.jpg");
+	background-size: cover;
+	background-position: right center;
+}
+
 #projects {
 	padding-top: 55px;
 
@@ -155,6 +161,9 @@ $bold-weight: 700;
 		text-align: justify;
 		@include breakpoint(medium down) {
 			column-count: 1;
+		}
+		p {
+			margin: 0 0 14px;
 		}
 	}
 	.sqr-buttons {
@@ -212,11 +221,19 @@ $bold-weight: 700;
 	.linkedin.picture-links-container {
 		padding-top: 6px;
 	}
-	.linkedin .picture {
-		background: url("/assets/img/linkedin_black.svg");
-		width: 16px;
-		height: 16px;
+
+	.github .picture {
+		background: url("/assets/img/github_black.svg");
+		width: 20px;
+		height: 20px;
 	}
+	.github:hover .picture {
+		background: url("/assets/img/github_white.svg");
+	}
+	.github.picture-links-container {
+		padding-top: 6px;
+	}
+
 
 	.previous.arrow .picture {
 		transform: rotate(180deg);
