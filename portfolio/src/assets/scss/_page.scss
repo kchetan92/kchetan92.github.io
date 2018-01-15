@@ -119,9 +119,11 @@ $bold-weight: 700;
 }
 
 .image.water	{
-	background: url("/assets/img/water_pipes.jpg");
+	background: url("/assets/img/water/cover.jpg");
 	background-size: cover;
 	background-position: right center;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 #projects {
@@ -265,6 +267,25 @@ $bold-weight: 700;
 
 ///////////
 //
+// Footer
+//
+///////////
+
+footer {
+	background-color: $theme-grey-bg;
+	padding: 50px 0;
+	color: #666;
+
+	.right {
+		float: right;
+		a {
+			color: #666;
+		}
+	}
+}
+
+///////////
+//
 // Project Page
 //
 ///////////
@@ -356,6 +377,10 @@ $bold-weight: 700;
 			border-color: $theme-orange;
 		}
 	}
+}
+
+.issuuembed {
+	margin-bottom: 100px;
 }
 
 
