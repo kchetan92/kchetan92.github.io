@@ -52,12 +52,12 @@ $bold-weight: 700;
 	}
 }
 
-.big-text.tile .description {
-	column-count: 2;
-	@include breakpoint(medium down) {
-		column-count: 1;
-	}
-}
+// .big-text.tile .description {
+// 	column-count: 2;
+// 	@include breakpoint(medium down) {
+// 		column-count: 1;
+// 	}
+// }
 
 .tile {
 	position: relative;
@@ -159,13 +159,30 @@ $bold-weight: 700;
 	.text {
 		padding-top: 40px;
 		font-size: 14px;
-		column-count: 2;
 		text-align: justify;
-		@include breakpoint(medium down) {
-			column-count: 1;
+		font-weight: $medium-weight;
+		.highlight {
+			background: white;
+		}
+		.hello {
+    	position: relative;
+		right: 40px;
+		width: 150px;
+		bottom: 30px;
+			@include breakpoint(medium down) {
+				right: -40px;
+				bottom: 25px;
+			}
 		}
 		p {
 			margin: 0 0 14px;
+		}
+	}
+	.dp img {
+		@include breakpoint(medium down) {
+			width: 50%;
+			height: auto;
+			padding-top: 20px;
 		}
 	}
 	.sqr-buttons {
@@ -212,6 +229,18 @@ $bold-weight: 700;
 	.instagram.picture-links-container {
 		padding-top: 6px;
 	}
+	.behance .picture{
+		background: url("/assets/img/behance_black.svg");
+		width: 20px;
+		height: 16px;
+	}
+	.behance:hover .picture {
+		background: url("/assets/img/behance_white.svg");
+	}
+	.behance.picture-links-container {
+		padding-top: 8px;
+	}
+
 	.linkedin .picture {
 		background: url("/assets/img/linkedin_black.svg");
 		width: 16px;
@@ -275,12 +304,38 @@ footer {
 	background-color: $theme-grey-bg;
 	padding: 50px 0;
 	color: #666;
-
-	.right {
-		float: right;
-		a {
+	text-align: center;
+	line-height: 2;
+	a {
 			color: #666;
+			padding: 0 5px;
 		}
+}
+
+.navigate {
+	.link {
+		margin: 0;
+		color: #000;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.previous {
+		float: left;
+	}
+	.next {
+		float: right;
+		text-align: right;
+	}
+	p {
+		margin: 0;
+		font-weight: bold;
+
+	}
+	.title {
+		margin: 0 0 15px;
+		font-weight: normal;
 	}
 }
 
@@ -355,6 +410,16 @@ footer {
 	background-size: contain;
 	height: 510px;
 	background-repeat: no-repeat;
+}
+
+figure.article-image {
+	margin: 0;
+	figcaption {
+		font-size: 14px;
+		font-style: italic;
+		color: #555;
+		margin: 20px 40px 50px 0;
+	}
 }
 
 .zoom-us {
