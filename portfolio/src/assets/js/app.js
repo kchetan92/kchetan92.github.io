@@ -132,6 +132,9 @@ $(document).ready(function(){
     document.querySelectorAll("img.lazyload").forEach(function(el){
         //console.log('img lazyloaded ', el.getAttribute('data-src'));
         el.setAttribute('src', el.getAttribute('data-src'));
+        el.onload = function() {
+            el.removeAttribute('data-src');
+        };
     })
 
     setTimeout(function(){ 
