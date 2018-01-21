@@ -503,10 +503,16 @@ figure.chapter-image.down-30 {
 	}
 }
 
+.low-fi {
+	.sqr-buttons {
+		margin-top: 20px;
+	}
+}
+
 .wasd .sqr-buttons {
 	float: right;
 	.picture-links-container {
-		margin-left: 4	px;
+		margin-left: 4px;
 		cursor: pointer;
 		display: inline-block;
 		&:hover {

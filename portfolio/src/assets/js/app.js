@@ -93,7 +93,7 @@ function initHeader(){
 
 function initSlider(){
 
-    function autoplay(interval) {
+    function autoplay(interval, wallop) {
       var lastTime = 0;  
       
       function frame(timestamp) {
@@ -110,15 +110,22 @@ function initSlider(){
       requestAnimationFrame(frame);
     };
 
-    var wallop = document.querySelector('.Wallop');
+    var wallop = document.querySelectorAll('.Wallop');
 
     if(wallop) {
-        var wallop = new Wallop(wallop);
-        var playTime = document.querySelector('.Wallop').getAttribute('autoplay');
+        // var wallop = new Wallop(wallop);
+        wallop.forEach(function(el) {
+            var n = new Wallop(el);
+            var playTime = el.getAttribute('autoplay');
+            if(playTime) {
+                autoplay(playTime, n);
+            }
+        })
+        // var playTime = document.querySelector('.Wallop').getAttribute('autoplay');
 
-        if(playTime) {
-            autoplay(playTime);
-        }
+        // if(playTime) {
+        //     autoplay(playTime);
+        // }
     }
 
     zoomEnable.init('.zoom-us');
