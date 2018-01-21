@@ -129,6 +129,11 @@ $(document).ready(function(){
 	initHeader();
 	initSlider();
 
+    document.querySelectorAll("img.lazyload").forEach(function(el){
+        //console.log('img lazyloaded ', el.getAttribute('data-src'));
+        el.setAttribute('src', el.getAttribute('data-src'));
+    })
+
     setTimeout(function(){ 
         console.image("https://media.giphy.com/media/9LQHvkbIzTSLe/giphy.gif");
     }, 5000);
