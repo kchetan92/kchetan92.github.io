@@ -373,7 +373,10 @@ footer {
 .article {
 	.title {
 		font-size: 50px;
-		text-align: center;
+		@include breakpoint(medium down) {
+			font-size: 35px;
+			margin-top: 0;
+		}
 	}
 	p {
 		font-size: 20px;
@@ -381,6 +384,43 @@ footer {
 	margin-top: 30px;
 	h2 {
 		margin-top: 60px;
+	}
+	.cover {
+		margin-bottom: 50px;
+		@include breakpoint(medium down) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.chapter {
+	margin: 10px 0 30px;
+	h2.name {
+		margin: 0;
+	}
+}
+
+.skills {
+	h2 {
+		font-size: 20px;
+		margin: 10px 0 5px;
+		@include breakpoint(medium down) {
+			margin-bottom: 0;
+		}
+		@include breakpoint(medium up) {
+			margin: 10px 0 5px;
+		}
+	}
+	p.description {
+		margin: 0 0 20px;
+		padding-top: 5px;	
+		padding-bottom: 10px;
+		@include breakpoint(medium down) {
+			border: 0px;
+		}
+		@include breakpoint(medium up) {
+			border-top: 4px solid black;
+		}
 	}
 }
 
@@ -418,8 +458,18 @@ figure.article-image {
 		font-size: 14px;
 		font-style: italic;
 		color: #555;
-		margin: 20px 40px 50px 0;
+		margin: 20px 40px 20px 0;
+		a {
+			color: #555;
+		}
 	}
+	figcaption.full {
+		margin-right: 0;
+	}
+}
+
+figure.chapter-image.down-60 {
+	margin-top: 60px;
 }
 
 .zoom-us {
