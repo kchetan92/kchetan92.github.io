@@ -191,7 +191,7 @@ $bold-weight: 700;
 			text-align: center;
 
 			.right {
-				margin-top: 20px;
+				margin-top: 20px;	
 				float: left !important;
 				display: block;
 			}
@@ -335,8 +335,18 @@ footer {
 	}
 	.previous {
 		float: left;
+		@include breakpoint(medium down) {
+			float: none;
+			text-align: left;
+			display: block;
+		}
 	}
 	.next {
+		@include breakpoint(medium down) {
+			float: none;
+			text-align: left;
+			display: block;
+		}
 		float: right;
 		text-align: right;
 	}
