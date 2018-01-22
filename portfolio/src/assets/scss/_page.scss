@@ -185,7 +185,19 @@ $bold-weight: 700;
 			padding-top: 20px;
 		}
 	}
+
 	.sqr-buttons {
+		@include breakpoint(small down) {
+			text-align: center;
+
+			.right {
+				margin-top: 20px;
+				float: left !important;
+				display: block;
+			}
+
+
+		}
 		margin-top: 36px;
 		.left .picture-links-container {
 			float: left;
@@ -506,6 +518,14 @@ figure.chapter-image.down-30 {
 .low-fi {
 	.sqr-buttons {
 		margin-top: 20px;
+	}
+}
+.hi-fi {
+	.Wallop-list {
+		img {
+			max-width: 300px;
+			display: inline-block;
+		}
 	}
 }
 
