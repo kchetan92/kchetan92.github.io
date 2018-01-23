@@ -93,12 +93,10 @@ $bold-weight: 700;
 		@include breakpoint(medium down) {
 			padding-right: 0.635rem;
 		}
-		a {
-			text-decoration: none;
-			color: #000;
-			font-weight: $medium-weight;
-		}
-		a:hover {
+		text-decoration: none;
+		color: #000;
+		font-weight: $medium-weight;
+		&:hover {
 			color: $theme-orange;
 		}
 	}
@@ -124,6 +122,20 @@ $bold-weight: 700;
 	background-position: right center;
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+.project-tiles {
+	.tile {
+		&>a {
+			text-decoration: none;
+			color: #000;
+			&:hover {
+				.heading, .link {
+					color: $theme-orange
+				}
+			}
+		}
+	}
 }
 
 #projects {
