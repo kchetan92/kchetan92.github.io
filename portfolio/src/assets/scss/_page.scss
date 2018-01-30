@@ -65,7 +65,47 @@ $bold-weight: 700;
 }
 
 
-
+#projects {
+	.tile {
+		background-image: url('/assets/img/plant.jpg');
+		height: 300px;
+		background-size: cover;
+		box-shadow: 15px 15px $theme-green;
+		width: 90%;
+		display: block;
+		text-decoration: none;
+		color: white;
+		font-size: 30px;
+		font-weight: $medium-weight;
+		position: relative;
+		p {
+			display: none;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			background: #000;
+			margin: 0;
+			padding: 10px;
+		}
+		&:hover {
+			p {
+				display: block;
+			}
+		}
+	}
+	.project-container > div:nth-of-type(2n) {
+		margin-top: 120px;
+		.tile {
+			float: right;
+		}
+	}
+	.project-container > div:nth-of-type(2n+1) {
+		margin-top: 50px;
+		.tile {
+			float: left;
+		}
+	}
+}
 
 #about {
 	background-color: $theme-green;
