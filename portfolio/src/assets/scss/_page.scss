@@ -8,11 +8,14 @@ $bold-weight: 700;
 #hello {
 	background-color: #FFF;
 	padding-top: 50px;
-	height: 100vh;
+	min-height: 100vh;
 	@include breakpoint(medium down) {
 		padding-top: 25px;
 	}
 	.message {
+		@include breakpoint(medium down) {
+			font-size: 30px;
+		}
 		font-size: 60px;
 		font-weight: $bold-weight;
 		padding-top: 45px;
@@ -42,8 +45,8 @@ $bold-weight: 700;
 		padding: 0 2px 7px 20px;
 		border-bottom: 4px solid #000;
 		&:hover {
-			color: $theme-orange;
-			border-color: $theme-orange;
+			color: $theme-green;
+			border-color: $theme-green;
 		}
 	}
 }
@@ -66,8 +69,12 @@ $bold-weight: 700;
 
 
 #projects {
+	margin-bottom: 100px;
+	@include breakpoint(medium down) {
+		margin-bottom: 70px;
+		width: 100%;
+	}
 	.tile {
-		background-image: url('/assets/img/plant.jpg');
 		height: 300px;
 		background-size: cover;
 		box-shadow: 15px 15px $theme-green;
@@ -78,6 +85,13 @@ $bold-weight: 700;
 		font-size: 30px;
 		font-weight: $medium-weight;
 		position: relative;
+		@include breakpoint(medium down) {
+			margin: 0 auto;
+			box-shadow: 0 15px $theme-green;
+			p {
+				display: block !important;
+			}
+		}
 		p {
 			display: none;
 			position: absolute;
@@ -93,19 +107,43 @@ $bold-weight: 700;
 			}
 		}
 	}
+	.project-container > div {
+		margin-top: 70px;
+	}
 	.project-container > div:nth-of-type(2n) {
-		margin-top: 120px;
-		.tile {
-			float: right;
+		@include breakpoint(large up) {
+			margin-top: 120px;
+			.tile {
+				float: right;
+			}
 		}
 	}
 	.project-container > div:nth-of-type(2n+1) {
-		margin-top: 50px;
-		.tile {
-			float: left;
+		@include breakpoint(large up) {
+			margin-top: 50px;
+			.tile {
+				float: left;
+			}
+		}
+	}
+	.tile.wasd {
+		background-image: url('/assets/img/hallway.jpg');
+	}
+
+	.tile.brand {
+		background-image: url('/assets/img/brand/brand_thumb.jpg');
+		background-position: center;
+	}
+
+	.tile.water {
+		background-image: url('/assets/img/water/cover_bw.jpg');
+		@include breakpoint(medium down) {
+			background-position: top center;
 		}
 	}
 }
+
+
 
 #about {
 	background-color: $theme-green;
@@ -114,7 +152,6 @@ $bold-weight: 700;
 	.text {
 		padding-top: 40px;
 		font-size: 14px;
-		text-align: justify;
 		font-weight: $medium-weight;
 		.highlight {
 			background: white;
@@ -135,7 +172,7 @@ $bold-weight: 700;
 	}
 	.dp img {
 		@include breakpoint(medium down) {
-			width: 50%;
+			width: 70%;
 			height: auto;
 			padding-top: 20px;
 		}
