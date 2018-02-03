@@ -75,7 +75,7 @@ $bold-weight: 700;
 		width: 100%;
 	}
 	.tile {
-		height: 300px;
+		height: 365px;
 		background-size: cover;
 		box-shadow: 15px 15px $theme-green;
 		width: 90%;
@@ -93,7 +93,7 @@ $bold-weight: 700;
 			}
 		}
 		p {
-			display: none;
+			// display: none;
 			position: absolute;
 			bottom: 0;
 			width: 100%;
@@ -101,11 +101,11 @@ $bold-weight: 700;
 			margin: 0;
 			padding: 10px;
 		}
-		&:hover {
-			p {
-				display: block;
-			}
-		}
+		// &:hover {
+		// 	p {
+		// 		display: block;
+		// 	}
+		// }
 	}
 	.project-container > div {
 		margin-top: 70px;
@@ -127,16 +127,16 @@ $bold-weight: 700;
 		}
 	}
 	.tile.wasd {
-		background-image: url('/assets/img/hallway.jpg');
+		background-image: url('/assets/img/wasd/wasd_mockup.jpg');
 	}
 
 	.tile.brand {
-		background-image: url('/assets/img/brand/brand_thumb.jpg');
+		background-image: url('/assets/img/brand/tshirt_branding.jpg');
 		background-position: center;
 	}
 
 	.tile.water {
-		background-image: url('/assets/img/water/cover_bw.jpg');
+		background-image: url('/assets/img/water/affinity-present.jpg');
 		@include breakpoint(medium down) {
 			background-position: top center;
 		}
