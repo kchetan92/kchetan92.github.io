@@ -136,8 +136,8 @@ $(document).ready(function(){
 	initHeader();
 	initSlider();
 
-    document.querySelectorAll("img.lazyload").forEach(function(el){
-        //console.log('img lazyloaded ', el.getAttribute('data-src'));
+    document.querySelectorAll("img[data-src]").forEach(function(el){
+        console.log('img lazyloaded ');
         el.setAttribute('src', el.getAttribute('data-src'));
         el.onload = function() {
             el.removeAttribute('data-src');
@@ -147,7 +147,7 @@ $(document).ready(function(){
     setTimeout(function(){ 
         console.image("https://media.giphy.com/media/9LQHvkbIzTSLe/giphy.gif");
     }, 5000);
-    console.log("I can design and develop! Hire me for Summer 2018 Internship!");
+    console.log("I can design and develop! I am looking for Summer 2018 Internship!");
 
 })
 
