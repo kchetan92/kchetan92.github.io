@@ -2,7 +2,7 @@ $theme-green: #40bca9;
 $theme-orange: #f54123;
 $theme-grey-bg: #efefef;
 $regular-weight: 400;
-$medium-weight: 600;
+$medium-weight: 500;
 $bold-weight: 700;
 
 #hello {
@@ -353,6 +353,10 @@ footer {
 	}
 }
 
+.read {
+	font-family: 'Merriweather', serif;
+}
+
 //https://davidwalsh.name/lazyload-image-fade
 
 img {
@@ -404,11 +408,22 @@ img[data-src] {
 		}
 	}
 	p {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	margin-top: 30px;
 	h2 {
 		margin-top: 60px;
+	}
+	h3 + h2 {
+		margin-top: 0;
+	}
+	h3 {
+		color: #a7aaa9;
+		margin: 50px 0 0;
+		//font-weight: $regular-weight;
+	}
+	h4 {
+		font-size: 18px;
 	}
 	.cover {
 		margin-bottom: 50px;
@@ -445,6 +460,28 @@ img[data-src] {
 		}
 		@include breakpoint(medium up) {
 			border-top: 4px solid black;
+		}
+	}
+}
+
+.reactions {
+	figure.article-image {
+		text-align: center;
+		img {
+			display: inline-block;
+			width: 50%
+		}
+		figcaption {
+			font-style: normal;
+			margin: 20px 20px 0;
+			font-size: 12px;
+			.who {
+				text-align: center;
+				font-size: 18px;
+				margin: 0 0 10px;
+				font-weight: $bold-weight;
+			}
+			text-align: left;
 		}
 	}
 }
