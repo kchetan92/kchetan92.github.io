@@ -397,6 +397,7 @@ img[data-src] {
 
 #article {
 	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 .article {
@@ -465,6 +466,9 @@ img[data-src] {
 }
 
 .reactions {
+	&>.cell {
+		margin-bottom: 30px;
+	}
 	figure.article-image {
 		text-align: center;
 		img {
