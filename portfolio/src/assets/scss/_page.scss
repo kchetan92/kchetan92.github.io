@@ -408,6 +408,10 @@ img[data-src] {
 	margin-bottom: 100px;
 }
 
+.cell.dd {
+	margin-top: 30px;
+}
+
 .article {
 	.title {
 		font-size: 50px;
@@ -560,12 +564,29 @@ figure.right-inline {
 	figcaption {
 		margin-right: 0;
 	}
+	@include breakpoint(medium down) {
+		float: none
+	}
 }
 
 figure.small {
 	width: 20%;
 	margin: 15px;
+	@include breakpoint(medium down) {
+		width: 50%;
+	}
 }
+
+figure.half {
+	width: 50%;
+	figcaption {
+		margin-right: 0;
+	}
+	@include breakpoint(small down) {
+		width: 100%;
+	}
+}
+
 
 figure.chapter-image.down-60 {
 	margin-top: 60px;
