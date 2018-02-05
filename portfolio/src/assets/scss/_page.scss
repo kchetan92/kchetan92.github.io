@@ -93,7 +93,6 @@ $bold-weight: 700;
 			}
 		}
 		p {
-			// display: none;
 			position: absolute;
 			bottom: 0;
 			width: 100%;
@@ -101,11 +100,6 @@ $bold-weight: 700;
 			margin: 0;
 			padding: 10px;
 		}
-		// &:hover {
-		// 	p {
-		// 		display: block;
-		// 	}
-		// }
 	}
 	.project-container > div {
 		margin-top: 70px;
@@ -143,7 +137,7 @@ $bold-weight: 700;
 		}
 	}
 	.tile.athleteJuvo {
-		background-image: url('/assets/img/athleteJuvo/mockup.jpg');
+		background-image: url('/assets/img/athletejuvo/mockup.jpg');
 		background-position: center;
 		@include breakpoint(medium down) {
 			background-position: top center;
