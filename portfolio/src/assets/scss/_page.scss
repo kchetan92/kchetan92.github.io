@@ -449,6 +449,13 @@ img[data-src] {
 	}
 }
 
+q {
+	font-size: 15px;
+	display: inline-block;
+	font-weight: $bold-weight;
+	padding: 20px;
+}
+
 .chapter {
 	margin: 10px 0 30px;
 	h2.name {
@@ -556,7 +563,7 @@ figure.right-inline {
 }
 
 figure.small {
-	width: 20%
+	width: 20%;
 	margin: 15px;
 }
 
