@@ -130,6 +130,11 @@ $bold-weight: 700;
 		background-position: center;
 	}
 
+	.tile.reuknight {
+		background-image: url('/assets/img/concert.jpg');
+		background-position: center;
+	}
+
 	.tile.water {
 		background-image: url('/assets/img/water/affinity-present.jpg');
 		@include breakpoint(medium down) {
