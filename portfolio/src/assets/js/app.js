@@ -131,10 +131,28 @@ function initSlider(){
     zoomEnable.init('.zoom-us');
 }
 
+function highlightNavigate(){
+    if ($('.navigate').length < 1) {
+        return;
+    }   else {
+        var url = window.location.href;
+        var projects = $('.navigate .project');
+
+        $.each(projects, function(i) {
+            var element = $(projects[i])
+            if(url.indexOf(element.find('a').attr('href')) > -1){
+                element.addClass('active');
+            }
+        }); 
+
+    }
+}
+
 $(document).ready(function(){
 
 	initHeader();
 	initSlider();
+    highlightNavigate();
 
     document.querySelectorAll("img[data-src]").forEach(function(el){
         console.log('img lazyloaded ');
