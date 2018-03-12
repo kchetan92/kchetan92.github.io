@@ -78,15 +78,16 @@
           </div>
         </div>
         <div class="grid-x skills grid-margin-x">
+            <div class="large-8 large-offset-2 cell">
+                <h2 class="name">Problem Statement</h2>
+                <q class="read">The navigation interface for vehicle doesn't extend very well for pedestrians in a multistory building.</q>
+            </div>
           <div class="large-5 large-offset-2 cell">
-            <h2 class="name">Problem Statement</h2>
-            <p class="read">GPS navigation has become a common place thanks to Google maps. We can now predict how to go from point A to B, even if its a new neighborhood. They now have maps for malls and airports as well.</p>
-            <p class="read">However, the same interface doesn't scale well for indoor navigation</p>
-            <p class="read">The project has been named WASD to show</p>
+            <p class="read">GPS navigation has become a common place thanks to Google maps. It has allowed us to explore new territories without the fear of getting lost. However, navigation for pedestrians is a different ball game.</p>
           </div>
           <div class="large-3 cell medium-8 medium-offset-2 large-offset-0">
     
-            <figure class="article-image chapter-image down-60">
+            <figure class="article-image chapter-image down-30">
               <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/l0HUhC4cwRAvnNRHW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
     
               <figcaption class="full"><a href="https://www.monumentvalleygame.com/" target="_blank">Monument valley</a>, a popular iOS game was an inspiration for this project.</figcaption>
@@ -110,7 +111,7 @@
     
           <div class="large-2 large-offset-2 cell small-8 medium-5 medium-offset-1">
             <h2 class="">Duration</h2>
-            <p class="description">Fall 2017</p>
+            <p class="description">4 months (Fall 2017)</p>
           </div>
           <div class="large-2 large-offset-1 cell small-8  medium-5">
             <h2 class="">Tools</h2>
@@ -122,23 +123,40 @@
         <div class="grid-x grid-margin-x chapter">
           <div class="large-8 large-offset-2 cell">
             <h2 class="name">Goals</h2>
-            <p class="read">Rethink navigation in a 3 dimensional space. Analyze what’s most important to a casual shopper visiting a mall.</p>
+            <p class="read">Rethink navigation for pedestrians inside a building. Identify opportunities and pain points.</p>
           </div>
         </div>
     
         <div class="grid-x grid-margin-x chapter">
           <div class="large-8 large-offset-2 cell">
             <h2 class="name">Research</h2>
-            <p class="read"><b>The purpose</b> of this research excercise was to identify the variety of problems which people face while navigating multi story buildings.</p>
+            <p class="read"><b>Aim:</b> Understand what a user goes through when navigating a building. How do people remember and recall a 3D structure.</p>
+            <p class="read"><b>Methodology:</b> I interviewed some of my batchmates to find out about their experiences in navigating new building. I wanted to know what helps them search and recall their way through the structure.</p>
     
-            <p class="read">Some structures have an ill reputation for being confusing. There can be a variety of reasons for that. My college building is one of such structures. Its been a whole semester, and I still sometimes lose my way in the building.</p>
+            <p class="read">Since people rely on intuition to find their way through a building, I couldn't get a complete picture through interviews alone.</p>
     
-            <p class="read">Casual conversations revealed that I am not the only one who feels that way. But interviewing them “why or how” they feel about walking through a building did not reveal much information. Instead I asked them to draw a floor map of a building they frequent the most. Analyzing these pictures gave me an idea of what people observe and remember about their surroundings. Most of the participants missed the doors and hallways which they don't frequent.</p>
+            <p class="read">I used a form of <b>cultural probe</b> to identify what people remember about a building. I asked them to draw a map of a floor which the frequent often.</p>
+    <!-- 
+            <p class="read">Casual conversations revealed that I am not the only one who feels that way. But interviewing them “why or how” they feel about walking through a building did not reveal much information. Instead I asked them to draw a floor map of a building they frequent the most. Analyzing these pictures gave me an idea of what people observe and remember about their surroundings. Most of the participants missed the doors and hallways which they don't frequent.</p> -->
     
             <figure class="article-image">
               <img src="../..//assets/img/wasd/map_sketch.png" alt="" class="small-preview">
               <figcaption>Map of a university building floor as drawn by a research participant.</figcaption>
             </figure>
+    
+            <p class="read"><b>Result: </b>From the interviews and probe, I learnt that</p>
+    
+            <ul>
+              <li>
+                <p class="read">Users remember which corridor and side their room of interest is, but do not remember how many doors/windows are there in the corridor.</p>
+              </li>
+              <li>
+                <p class="read">Users often fail to remember the rooms they don't frequent. One of the female participants, couldn't recall where the mens' washroom was.</p>
+              </li>
+              <li>
+                <p class="read">None of the users indicated the actual distance they walk (in ft or meters) to arrive at their destination.</p>
+              </li>
+            </ul>
     
           </div>
         </div>
@@ -146,7 +164,7 @@
         <div class="grid-x grid-margin-x chapter personas">
           <div class="large-8 large-offset-2 cell">
             <h2 class="name">Personas</h2>
-            <p class="read">Based on the interview responses, I created some personas based on my understanding of different categories of people in this context.</p>
+            <p class="read">Persona helps me empathize with the users. I created these personas from my user research and referred to them often later in the process.</p>
     
                 <div class="Wallop Wallop--fade" autoplay="2000">
                   <div class="Wallop-list">
@@ -174,7 +192,9 @@
         <div class="grid-x grid-margin-x chapter experience-map">
           <div class="large-8 large-offset-2 cell">
             <h2 class="name">Experience map</h2>
-            <p class="read">Based on my observations, I constructed the following experience map. It helped me identify the pain points at each phase of a user's journey and observe his/her emotions. This sets a theme or defines the requirements for the UI.</p>
+            <!-- <p class="read">Based on my observations, I constructed the following experience map. It helped me identify the pain points at each phase of a user's journey and observe his/her emotions. This sets a theme or defines the requirements for the UI.</p> -->
+    
+            <p class="read">Finding your way around a building is a complicated procedure, and can become an extended ordeal for the user. This experience map provides a way to track users thoughts, actions and feelings. This is very helpful when deciding on the content and layout of various screens of the interface.</p>
     
             <figure class="article-image">
               <a href="../..//assets/img/wasd/emotion_map.png" target="_blank">
@@ -194,7 +214,8 @@
           </div>
     
             <div class="large-5 large-offset-2 cell">
-              <p class="read">Some other companies such as <a href="https://www.infsoft.com/" target="_blank">insoft</a>, <a href="https://www.accuware.com" target="_blank">accuware</a>, <a href="http://www.navvis.com/indoor-navigation" target="_blank">NavVis</a>, <a href="http://www.indooratlas.com/" target="_blank">IndoorAtlas</a>, use technology such as WiFi positions, bluetooth beacons, vision based navigation. Although these technologies overcome GPS's inaccuracy indoors, they're similar to Google Maps in terms of user experience.</p>
+              <p class="read">GPS technology is not very reliable indoors. Companies like <a href="https://www.infsoft.com/" target="_blank">insoft</a>, <a href="https://www.accuware.com" target="_blank">accuware</a>, <a href="http://www.navvis.com/indoor-navigation" target="_blank">NavVis</a>, <a href="http://www.indooratlas.com/" target="_blank">IndoorAtlas</a>, use WiFi positions, bluetooth beacons or vision based navigation to get the location.</p>
+              <p class="read"><b>Inference:</b> While there are multiple tech companies focusing on indoor navigation, there aren't many which focus on the UX of indoor navigation. Some malls/airports have their own dedivated app to help in navigation but they're rarely used.</p>
             </div>
             
             <div class="large-3 cell medium-8 medium-offset-2 large-offset-0">
