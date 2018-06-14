@@ -30,6 +30,11 @@ $bold-weight: 700;
 			padding: 0 10px;
 		}
 	}
+
+	h1, h2 {
+		font-size: inherit;
+		margin: 0;
+	}
 }
 
 .header {
@@ -147,6 +152,11 @@ $bold-weight: 700;
 		@include breakpoint(medium down) {
 			background-position: top center;
 		}
+	}
+
+	h3 {
+		font-size: inherit;
+		margin: 0;
 	}
 }
 
