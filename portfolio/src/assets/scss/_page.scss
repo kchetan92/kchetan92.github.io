@@ -93,11 +93,11 @@ $bold-weight: 700;
 		@include breakpoint(medium down) {
 			margin: 0 auto;
 			box-shadow: 0 15px $theme-green;
-			p {
+			h3 {
 				display: block !important;
 			}
 		}
-		p {
+		h3 {
 			position: absolute;
 			bottom: 0;
 			width: 100%;
@@ -198,19 +198,19 @@ $bold-weight: 700;
 	.sqr-buttons {
 		@include breakpoint(small down) {
 			text-align: center;
-
 			.right {
 				margin-top: 20px;	
 				float: left !important;
 				display: block;
 			}
-
-
 		}
 		margin-top: 36px;
 		.left .picture-links-container {
 			float: left;
 			margin-right: 22px;
+		}
+		.left .picture {
+			color: rgba(0,0,0,0)
 		}
 		.right	{
 			float: right;
