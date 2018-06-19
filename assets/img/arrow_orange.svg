@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.8 15.02"><defs><style>.a{fill:#ef4327}</style></defs><title>arrow_orange</title><path class="a" d="M0 13.28l1.88 1.74L8 8.38l.8-.87-.8-.87L1.88 0 0 1.74l5.32 5.77L0 13.28z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.8 15.02">
+  <defs>
+    <style>
+      .a {
+        fill: #ef4327;
+      }
+    </style>
+  </defs>
+  <title>arrow_orange</title>
+  <polygon class="a" points="0 13.28 1.88 15.02 8 8.38 8.8 7.51 8.8 7.51 8 6.64 1.88 0 0 1.74 5.32 7.51 0 13.28"/>
+</svg>
