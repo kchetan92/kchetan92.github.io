@@ -86,15 +86,26 @@
 		for(var i=0, j=images.length; i<j; i++) {
 			(function(num){
 				images[num].setAttribute("tabindex", num + 1)
-			})(i)
-			images[i].addEventListener("focus", function(el) {
-				main_image.style.backgroundImage = "url("+ el.target.getAttribute("src") +")"
-				main_image.textContent = el.target.getAttribute("alt")
-			})
-			images[i].addEventListener("blur", function(el) {
-				main_image.style.backgroundImage = ""
-				main_image.textContent = "Hover or tab over/into an image below."
-			})
+			})(i);
+
+			(function(i){
+				["focus", "mouseenter"].forEach(function(ev) {
+					console.log(ev);
+					images[i].addEventListener(ev, function(el) {
+						main_image.style.backgroundImage = "url("+ el.target.getAttribute("src") +")"
+						main_image.textContent = el.target.getAttribute("alt")
+					})
+				})
+			})(i);
+
+			(function(i){
+				["blur", "mouseout"].forEach(function(ev) {
+					images[i].addEventListener(ev, function(el) {
+						main_image.style.backgroundImage = ""
+						main_image.textContent = "Hover or tab over/into an image below."
+					})	
+				})
+			})(i);
 		}
 
 	</script>
