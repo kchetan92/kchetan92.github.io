@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>JavaScript Challenges</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+
+        <legend>Billing Information</legend>
+
+        <p>
+          <label>
+            Postal Address:<br>
+          <textarea name="postaladdress" id="postaladdress" rows="5" cols="20"></textarea>
+          </label>
+        </p>
+        
+        <p>
+          Home Address:<br>
+          <label>
+             <input type="checkbox" name="homepostalcheck" id="homepostalcheck">
+             Same as above
+          </label>
+          <br>
+          <textarea name="homeaddress" id="homeaddress" rows="5" cols="20"></textarea>
+        </p>
+
+      </fieldset>
+    </form>
+    <script type="text/javascript">
+      
+      var checkbox = document.getElementById("homepostalcheck");
+      var postaladdress = document.getElementById("postaladdress");
+      var homeaddress = document.getElementById("homeaddress");
+
+      checkbox.addEventListener("click", function(){
+        if(checkbox.checked) {
+          homeaddress.setAttribute("disabled", "")
+          homeaddress.value = postaladdress.value
+        } else {
+          homeaddress.removeAttribute("disabled")
+          homeaddress.value = ""
+        }
+      })
+
+      postaladdress.addEventListener("input", function(){
+        if(checkbox.checked) {
+          homeaddress.value = postaladdress.value
+        }
+      })
+
+    </script>
+  </body>
+</html>

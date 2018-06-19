@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>JavaScript Challenges</title>
+    <style type="text/css">
+      #emailpara {
+        display: none
+      }
+
+      #emailpara.show {
+        display: block
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+
+        <legend>Email subscriptions</legend>
+
+        <p id="Ross">
+          <label>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            Yes! I would like to receive all of your free candy!
+          </label>
+        </p>
+
+        <p id="emailpara">
+          <label>
+            Email Address: 
+            <input type="text" name="email" id="email">
+          </label>
+        </p>
+
+      </fieldset>
+    </form>
+    <script type="text/javascript">
+      var checkbox = document.getElementById("subscribe");
+      var emailPara = document.getElementById("emailpara");
+
+      checkbox.addEventListener("click", function(){
+        if(checkbox.checked) {
+          emailPara.classList.add("show")
+        } else {
+          emailPara.classList.remove("show")
+        }
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>JavaScript Challenges</title>
+  </head>
+  <body>
+    <form action="mailto:me@fakeemail.com">
+      <fieldset>  
+        <legend>Radio buttons and Check Boxes</legend>
+        <p>
+          What's your favourite berry?: 
+          <label>
+            <input type="radio" value="male" name="favfruit" id="optstraw">
+            Strawberries
+          </label>
+          <label>
+            <input type="radio" value="female" name="favfruit" id="optblue">
+            Blueberries
+          </label>
+        </p>
+        <input type="submit" value="Check it out!">
+      </fieldset>
+    </form>
+    <script type="text/javascript">
+      var form = document.getElementsByTagName("form")[0]
+
+      form.addEventListener("submit", function(e){
+        var data = new FormData(form)
+        var resultString = ""
+        data.forEach(function(el) {
+          resultString += el;
+        })
+        if(resultString.length == 0) {
+          e.preventDefault();
+          alert("select a berry");
+        }
+      })
+
+    </script>
+  </body>
+</html>

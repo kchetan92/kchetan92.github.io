@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>JavaScript Challenges</title>
+    <style type="text/css">
+      label {
+        display: block
+      }
+
+      .error {
+        color: red;
+        font-weight: bold;
+        visibility: hidden;
+      }
+
+      input:invalid + p {
+        visibility: visible;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <!--This challange can be solved without using any JavaScript, thanks to HTML5 validation-->
+
+    <form action="mailto:me@fakeemail.com">
+      <label for="choose">Full name</label>
+      <input id="fullname" name="fullname" required>
+      <p class="error">Please enter your name</p>
+      
+      
+        <label for="choose">Street Address</label>
+      <input id="choose" name="i_like3" required>
+      <p class="error">Please enter your street address</p>
+      
+      <button>Submit</button>
+    </form> 
+  </body>
+</html>
