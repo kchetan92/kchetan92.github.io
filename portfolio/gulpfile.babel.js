@@ -127,9 +127,9 @@ function javascript() {
 // In production, the images are compressed
 function images() {
   return gulp.src('src/assets/img/**/*')
-    .pipe($.if(PRODUCTION, $.imagemin({
-      progressive: true
-    })))
+    // .pipe($.if(PRODUCTION, $.imagemin({
+    //   progressive: true
+    // })))
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
