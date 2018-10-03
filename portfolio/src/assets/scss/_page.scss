@@ -186,6 +186,9 @@ $bold-weight: 700;
 		p {
 			margin: 0 0 14px;
 		}
+		a {
+			color: #000;
+		}
 	}
 	.dp img {
 		@include breakpoint(medium down) {
@@ -196,6 +199,7 @@ $bold-weight: 700;
 	}
 
 	.sqr-buttons {
+		display: none;
 		@include breakpoint(small down) {
 			text-align: center;
 			.right {
@@ -209,9 +213,7 @@ $bold-weight: 700;
 			float: left;
 			margin-right: 22px;
 		}
-		.left .picture {
-			color: rgba(0,0,0,0)
-		}
+		
 		.right	{
 			float: right;
 			.resume {
