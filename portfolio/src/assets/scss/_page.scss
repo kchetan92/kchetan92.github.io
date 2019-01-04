@@ -5,12 +5,24 @@ $regular-weight: 400;
 $medium-weight: 500;
 $bold-weight: 700;
 
+@font-face {
+	font-family: 'Circular Std Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/assets/fonts/circular/CircularStd-Bold.woff') format('woff');
+	
+}
+
 %serif {
 	font-family: 'Domine', serif;
 }
 
 %sans-serif {
-	font-family: 'Nunito', serif;
+	font-family: 'Nunito', sans-serif;
+}
+
+%circular-bold {
+	font-family: 'Circular Std Bold', sans-serif;
 }
 
 // possible scheme with the theme
@@ -342,7 +354,7 @@ img[data-src] {
 ///////////
 
 .floating-header {
-	background: $theme-grey-bg;
+	background: $theme-green;
 	padding: 25px 0;
 	position: fixed;
 	top:0;
@@ -397,8 +409,9 @@ img[data-src] {
 		margin-top: 0;
 	}
 	h3 {
-		color: #a7aaa9;
+		//@extend %sans-serif;
 		margin: 50px 0 0;
+		font-weight: 200;
 		//font-weight: $regular-weight;
 	}
 	.fact {
@@ -420,9 +433,15 @@ img[data-src] {
 		}
 	}
 
+	&.gale .bg {
+		background-color: $theme-green; 
+		position: relative;
+		margin-bottom: 10vh;
+	}
+
 	.intro {
-		height: 60vh;
-		text-align: center;
+		height: 40vh;
+		//text-align: center;
 		margin-bottom: 30vh;
 
 		.title {
@@ -432,23 +451,25 @@ img[data-src] {
 				font-size: 50px;
 				padding: 0;
 				margin: 0;
+				color: #FFF;
+				line-height: 1.2;
 			}
 			img {
-				width: 35%;
+				width: 35vw;
 				height: auto;
 				margin-top: 90px;
+				position: absolute;
+				right: 0;
+				bottom: -10vh;
 			}
-			.subtitle p {
-				font-family: $body-font-family;
-				font-size: 16px;
+			.subtitle {
 				padding-top: 20px;
-				//font-weight: 500;
+				p {
+					@extend %circular-bold;
+					font-size: 16px;	
+				}
 			}
 		}
-	}
-
-	&.gale .intro {
-		background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 	}
 }
 
@@ -626,6 +647,15 @@ figure.chapter-image.down-30 {
 	}
 }
 
+.half-size-image {
+	width: 50%;
+}
+
+.middle-image {
+	margin: 0 auto;
+	display: block;
+}
+
 .wasd .sqr-buttons {
 	float: right;
 	.picture-links-container {
@@ -636,6 +666,11 @@ figure.chapter-image.down-30 {
 			border-color: $theme-orange;
 		}
 	}
+}
+
+.one-four-image {
+	display: inline-block;
+	width: 23%;
 }
 
 .issuuembed {
