@@ -496,7 +496,7 @@ q {
 			margin-bottom: 0;
 		}
 		@include breakpoint(medium up) {
-			margin: 60px 0 40px;
+			margin: 60px 0 15px;
 		}
 	}
 	p.description {
@@ -651,6 +651,10 @@ figure.chapter-image.down-30 {
 	width: 50%;
 }
 
+.per70-size-image {
+	width: 70%;
+}
+
 .middle-image {
 	margin: 0 auto;
 	display: block;
@@ -675,6 +679,15 @@ figure.chapter-image.down-30 {
 
 .issuuembed {
 	margin-bottom: 100px;
+}
+
+.section-wide-bg.light-grey {
+	background: #f0f0f0;
+}
+
+.persona img {
+	display: inline;
+	width: 32%
 }
 
 
