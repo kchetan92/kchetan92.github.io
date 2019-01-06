@@ -410,7 +410,7 @@ img[data-src] {
 	}
 	h3 {
 		//@extend %sans-serif;
-		margin: 50px 0 0;
+		margin: 200px 0 0;
 		font-weight: 200;
 		//font-weight: $regular-weight;
 	}
@@ -648,7 +648,7 @@ figure.chapter-image.down-30 {
 }
 
 .half-size-image {
-	width: 50%;
+	width: 49%;
 }
 
 .per70-size-image {
@@ -685,9 +685,17 @@ figure.chapter-image.down-30 {
 	background: #f0f0f0;
 }
 
-.persona img {
+.inline-one-third img {
 	display: inline;
 	width: 32%
+}
+
+.preview-screen {
+	padding: 50px 0;
+	font-size: 0;
+	img {
+		padding: 0 20px 20px 0;
+	}
 }
 
 
