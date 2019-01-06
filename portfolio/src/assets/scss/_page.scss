@@ -442,7 +442,7 @@ img[data-src] {
 	.intro {
 		height: 40vh;
 		//text-align: center;
-		margin-bottom: 30vh;
+		margin-bottom: 15vh;
 
 		.title {
 			padding-top: 70px;
@@ -460,7 +460,8 @@ img[data-src] {
 				margin-top: 90px;
 				position: absolute;
 				right: 0;
-				bottom: -10vh;
+				bottom: -20vh;
+				z-index: 20;
 			}
 			.subtitle {
 				padding-top: 20px;
@@ -696,6 +697,14 @@ figure.chapter-image.down-30 {
 	img {
 		padding: 0 20px 20px 0;
 	}
+}
+
+.overview-box {
+	background: #FFF;
+}
+
+.content {
+	margin-top: 25vh;
 }
 
 
