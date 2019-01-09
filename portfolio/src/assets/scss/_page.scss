@@ -32,49 +32,6 @@ $bold-weight: 700;
 // pastel colors
 // https://coolors.co/b0d0d3-c08497-f7af9d-f7e3af-f3eec3
 
-#hello {
-	background-color: #FFF;
-	padding-top: 50px;
-	min-height: 60vh;
-	@include breakpoint(medium down) {
-		padding-top: 25px;
-	}
-	.message {
-		@include breakpoint(medium down) {
-			font-size: 30px;
-		}
-		font-size: 20px;
-		font-weight: $bold-weight;
-		padding-top: 45px;
-		margin-top: 10vh;
-		p {
-			margin: 0;
-			line-height: 2;
-			font-weight: 500;
-		}
-		.bigText {
-			//font-family: 'EB Garamond', serif;
-			font-size: 40px;
-		}
-		.name {
-			display: inline-block;
-			position: relative;
-			z-index: 2;
-			font-weight: 700;
-		}
-		.name::after {
-			content:'';
-			width: 100%;
-			height: 10px;
-			display: inline-block;
-			position: absolute;
-			left: 0;
-			bottom: 7px;
-			background: $theme-green;
-			z-index: -1;
-		}
-	}
-}
 
 .header {
 	text-align: right;
@@ -113,176 +70,6 @@ $bold-weight: 700;
 	}
 }
 
-
-#projects {
-	margin-bottom: 100px;
-	@include breakpoint(medium down) {
-		margin-bottom: 70px;
-		width: 100%;
-	}
-
-	.tile {
-		display: block;
-		margin: 0 40px 40px 0;
-		text-align: center;
-	}
-}
-
-
-
-#about {
-	background-color: $theme-green;
-	padding-top: 60px;
-	padding-bottom: 110px;
-	.text {
-		padding-top: 40px;
-		font-size: 14px;
-		font-weight: $medium-weight;
-		.highlight {
-			background: white;
-		}
-		.hello {
-    	position: relative;
-		right: 40px;
-		width: 150px;
-		bottom: 30px;
-			@include breakpoint(medium down) {
-				right: -40px;
-				bottom: 25px;
-			}
-		}
-		p {
-			margin: 0 0 14px;
-		}
-	}
-	.dp img {
-		@include breakpoint(medium down) {
-			width: 70%;
-			height: auto;
-			padding-top: 20px;
-		}
-	}
-
-	.sqr-buttons {
-		@include breakpoint(small down) {
-			text-align: center;
-
-			.right {
-				margin-top: 20px;	
-				float: left !important;
-				display: block;
-			}
-
-
-		}
-		margin-top: 36px;
-		.left .picture-links-container {
-			float: left;
-			margin-right: 22px;
-		}
-		.right	{
-			float: right;
-			.resume {
-				color: black;
-				font-weight: $bold-weight;
-				text-decoration: none;
-				font-size: 20px;
-				border: 3px solid black;
-				width: 105px;
-				display: inline-block;
-				text-align: center;
-				height: 38px;
-				&:hover {
-					color: white;
-					border-color: white;
-				}
-			}
-		}
-	}
-
-}
-
-.sqr-buttons {
-	.picture {
-		display: inline-block;
-		background-repeat: no-repeat !important;
-	}
-	.instagram .picture{
-		background: url("/assets/img/instagram_black.svg");
-		width: 16px;
-		height: 16px;
-	}
-	.instagram:hover .picture {
-		background: url("/assets/img/instagram_white.svg");
-	}
-	.instagram.picture-links-container {
-		padding-top: 6px;
-	}
-	.behance .picture{
-		background: url("/assets/img/behance_black.svg");
-		width: 20px;
-		height: 16px;
-	}
-	.behance:hover .picture {
-		background: url("/assets/img/behance_white.svg");
-	}
-	.behance.picture-links-container {
-		padding-top: 8px;
-	}
-
-	.linkedin .picture {
-		background: url("/assets/img/linkedin_black.svg");
-		width: 16px;
-		height: 16px;
-	}
-	.linkedin:hover .picture {
-		background: url("/assets/img/linkedin_white.svg");
-	}
-	.linkedin.picture-links-container {
-		padding-top: 6px;
-	}
-
-	.github .picture {
-		background: url("/assets/img/github_black.svg");
-		width: 20px;
-		height: 20px;
-	}
-	.github:hover .picture {
-		background: url("/assets/img/github_white.svg");
-	}
-	.github.picture-links-container {
-		padding-top: 6px;
-	}
-
-
-	.previous.arrow .picture {
-		transform: rotate(180deg);
-	}
-
-	.arrow .picture {
-		background: url("/assets/img/arrow_black.svg");
-		width: 10px;
-		height: 15px;
-	}
-	.arrow:hover .picture {
-		background: url("/assets/img/arrow_orange.svg");
-	}
-
-	.arrow.picture-links-container {
-		padding-top: 6px;
-	}
-	.picture-links-container {
-		display: block;
-		height: 38px;
-		width: 38px;
-		border: 3px solid black;
-		text-align: center;
-		&:hover {
-			border-color: white;
-		}
-	}
-}
-
 ///////////
 //
 // Footer
@@ -303,27 +90,6 @@ footer {
 
 .navigate {
 	text-align: center;
-	.project {
-		display: inline;
-		width: auto !important;
-		margin: 0 auto;
-		padding: 0 7px;
-		a {
-			color: #777;
-			font-weight: bold;
-			&:hover {
-				color: #000;			
-			}
-		}
-		p {
-			margin: 10px 0;
-		}
-	}
-	.project.active {
-		a {
-			color: #000;
-		}
-	}
 }
 
 .read {
@@ -433,10 +199,17 @@ img[data-src] {
 		}
 	}
 
-	&.gale .bg {
-		background-color: $theme-green; 
-		position: relative;
-		margin-bottom: 10vh;
+	&.gale {
+		.bg {
+			background-color: $theme-green; 
+			position: relative;
+			margin-bottom: 10vh;
+		}
+		.concept {
+			img {
+				padding: 0 15px 15px 0
+			}
+		}
 	}
 
 	.intro {
@@ -656,8 +429,14 @@ figure.chapter-image.down-30 {
 }
 
 .middle-image {
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
+}
+
+.vert-margin-image {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .wasd .sqr-buttons {
@@ -672,6 +451,12 @@ figure.chapter-image.down-30 {
 	}
 }
 
+.facts {
+	h3 {
+		margin-top: 30px;
+	}
+}
+
 .one-four-image {
 	display: inline-block;
 	width: 23%;
@@ -681,8 +466,14 @@ figure.chapter-image.down-30 {
 	margin-bottom: 100px;
 }
 
-.section-wide-bg.light-grey {
-	background: #f0f0f0;
+.section-wide-bg {
+	margin-top: 200px;
+	&.light-grey {
+		background: #f0f0f0;
+	}
+	h3 {
+		margin-top: 30px;
+	}
 }
 
 .inline-one-third img {
