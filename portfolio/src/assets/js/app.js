@@ -1,8 +1,9 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
 window.$ = $;
-
 import './console_image'
+
+const consoleImage = "/assets/img/console.gif";
 
 (function(window){
     function define_library() {
@@ -163,7 +164,7 @@ $(document).ready(function(){
     })
 
     setTimeout(function(){ 
-        console.image("https://media.giphy.com/media/9LQHvkbIzTSLe/giphy.gif");
+        console.image(consoleImage);
     }, 5000);
     console.log("I can design and develop! I am looking for Summer 2018 Internship!");
 

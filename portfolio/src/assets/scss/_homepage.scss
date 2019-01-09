@@ -1,0 +1,36 @@
+
+#introduction {
+    margin-top: 80px;
+    color: #353535;
+    .hi h1 {
+        @extend %serif;
+        font-size: 48px;  
+    }
+    .subtitle {
+        @extend %sans-serif;
+        color: #4A4A4A;
+        font-size: 24px;
+        line-height: 1.415;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+#projects {
+    margin-top: 200px;
+    @extend %sans-serif;
+    p {
+        margin: 0;
+    }
+    .project-title {
+        font-weight: bold;
+        font-size: 32px;
+        color: #575757;
+        margin-bottom: 30px;
+    }
+    .description {
+        font-size: 20px;
+        color: #767676;
+    }
+}

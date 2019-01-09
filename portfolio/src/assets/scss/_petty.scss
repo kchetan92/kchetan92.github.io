@@ -1,0 +1,131 @@
+
+figure.small {
+	width: 20%;
+	margin: 15px;
+	@include breakpoint(medium down) {
+		width: 50%;
+	}
+}
+
+figure.half {
+	width: 50%;
+	figcaption {
+		margin-right: 0;
+	}
+	@include breakpoint(small down) {
+		width: 100%;
+	}
+}
+
+
+figure.chapter-image.down-60 {
+	margin-top: 60px;
+}
+
+figure.chapter-image.down-30 {
+	margin-top: 30px;
+}
+
+.zoom-us {
+	&:hover {
+		cursor: zoom-in;
+	}
+}
+
+.logo-gif {
+	height: 150px;
+}
+
+.personas {
+	.Wallop .sqr-buttons {
+		margin-right: 50px;
+	}
+}
+
+.low-fi {
+	.sqr-buttons {
+		margin-top: 20px;
+	}
+}
+.hi-fi {
+	.Wallop-list {
+		img {
+			max-width: 300px;
+			display: inline-block;
+		}
+	}
+}
+
+.half-size-image {
+	width: 49%;
+}
+
+.per70-size-image {
+	width: 70%;
+}
+
+.middle-image {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.vert-margin-image {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.wasd .sqr-buttons {
+	float: right;
+	.picture-links-container {
+		margin-left: 4px;
+		cursor: pointer;
+		display: inline-block;
+		&:hover {
+			border-color: $theme-orange;
+		}
+	}
+}
+
+.facts {
+	h3 {
+		margin-top: 30px;
+	}
+}
+
+.one-four-image {
+	display: inline-block;
+	width: 23%;
+}
+
+.issuuembed {
+	margin-bottom: 100px;
+}
+
+.section-wide-bg {
+	margin-top: 200px;
+	&.light-grey {
+		background: #f0f0f0;
+	}
+	h3 {
+		margin-top: 30px;
+	}
+}
+
+.inline-one-third img {
+	display: inline;
+	width: 32%
+}
+
+.preview-screen {
+	padding: 50px 0;
+	font-size: 0;
+	img {
+		padding: 0 20px 20px 0;
+	}
+}
+
+
+
+
+
