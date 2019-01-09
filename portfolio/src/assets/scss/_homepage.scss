@@ -27,10 +27,64 @@
         font-weight: bold;
         font-size: 32px;
         color: #575757;
-        margin-bottom: 30px;
+        margin: 30px 0;
     }
     .description {
         font-size: 20px;
         color: #767676;
+    }
+    .project {
+        margin-bottom: 80px;
+    }
+
+    .image-container {
+        position: relative;
+        img {
+            z-index: 10;
+            position: relative;
+            margin: 20px 0;
+        }
+        .image-bg {
+            position: absolute;
+            width: 500%;
+            height: 100%;
+            top: 0;
+            z-index: 1;
+        }
+        &.left {
+            .image-bg {
+                left: 200px;
+            }
+        }
+
+        &.right {
+            .image-bg {
+                right: 200px;
+            }
+        }
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .gale {
+        .image-bg {
+            background-color: #4BC6B8;
+        }
+        img {
+            height: 260px;
+            width: auto;
+        }
+    }
+
+    .chi {
+        .image-bg {
+            background-color: #FFD448;
+        }
+        img {
+            width: 200px;
+            height: auto;   
+        }
     }
 }
