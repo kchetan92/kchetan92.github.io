@@ -1,0 +1,35 @@
+$theme-green: #40bca9;
+$theme-orange: #f54123;
+$theme-grey-bg: #efefef;
+$regular-weight: 400;
+$medium-weight: 500;
+$bold-weight: 700;
+
+@font-face {
+	font-family: 'Circular Std Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/assets/fonts/circular/CircularStd-Bold.woff') format('woff');
+	
+}
+
+%serif {
+	font-family: 'Domine', serif;
+}
+
+%sans-serif {
+	font-family: 'Nunito', sans-serif;
+}
+
+%circular-bold {
+	font-family: 'Circular Std Bold', sans-serif;
+}
+
+%green-blue-bg {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4bc6b8+0,49b5c1+100 */
+    background: rgb(75,198,184); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(75,198,184,1) 0%, rgba(73,181,193,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(75,198,184,1) 0%,rgba(73,181,193,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(75,198,184,1) 0%,rgba(73,181,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4bc6b8', endColorstr='#49b5c1',GradientType=0 ); /* IE6-9 */
+}

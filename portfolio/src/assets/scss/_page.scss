@@ -1,29 +1,4 @@
-$theme-green: #40bca9;
-$theme-orange: #f54123;
-$theme-grey-bg: #efefef;
-$regular-weight: 400;
-$medium-weight: 500;
-$bold-weight: 700;
-
-@font-face {
-	font-family: 'Circular Std Bold';
-	font-style: normal;
-	font-weight: normal;
-	src: url('/assets/fonts/circular/CircularStd-Bold.woff') format('woff');
-	
-}
-
-%serif {
-	font-family: 'Domine', serif;
-}
-
-%sans-serif {
-	font-family: 'Nunito', sans-serif;
-}
-
-%circular-bold {
-	font-family: 'Circular Std Bold', sans-serif;
-}
+@import "constants";
 
 // possible scheme with the theme
 // https://color.adobe.com/Copy-of-Copy-of-Copy-of-Core-color-theme-11666725/
@@ -120,7 +95,7 @@ img[data-src] {
 ///////////
 
 .floating-header {
-	background: $theme-green;
+	background: #FFF;
 	padding: 25px 0;
 	position: fixed;
 	top:0;
@@ -164,7 +139,7 @@ img[data-src] {
 	.title.double {
 		margin-bottom: 0;
 	}
-	p {
+	p, ul {
 		font-size: 18px;
 	}
 	margin-top: 30px;
@@ -176,7 +151,7 @@ img[data-src] {
 	}
 	h3 {
 		//@extend %sans-serif;
-		margin: 200px 0 0;
+		margin: 120px 0 0;
 		font-weight: 200;
 		//font-weight: $regular-weight;
 	}
@@ -201,7 +176,7 @@ img[data-src] {
 
 	&.gale {
 		.bg {
-			background-color: $theme-green; 
+			@extend %green-blue-bg;	
 			position: relative;
 			margin-bottom: 10vh;
 		}
@@ -257,31 +232,6 @@ q {
 	margin: 10px 0 30px;
 	h2.name {
 		margin: 0;
-	}
-}
-
-.skills {
-	h2 {
-		font-size: 24px;
-		margin: 10px 0 5px;
-		@extend %serif;
-		@include breakpoint(medium down) {
-			margin-bottom: 0;
-		}
-		@include breakpoint(medium up) {
-			margin: 60px 0 15px;
-		}
-	}
-	p.description {
-		margin: 0 0 20px;
-		padding-top: 5px;	
-		padding-bottom: 10px;
-		@include breakpoint(medium down) {
-			border: 0px;
-		}
-		@include breakpoint(medium up) {
-			border-top: 4px solid black;
-		}
 	}
 }
 
