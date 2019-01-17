@@ -93,4 +93,17 @@
             top: -72px;
         }
     }
+    .brushybuddy {
+        margin-bottom: 200px;
+        .image-bg {
+            @extend %plum-plate;
+        }
+        img {
+            width: 400px;
+            height: auto;   
+            position: absolute;
+            left: 0;
+            top: 20px;
+        }
+    }
 }

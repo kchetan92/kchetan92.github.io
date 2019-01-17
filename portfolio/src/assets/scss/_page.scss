@@ -30,7 +30,6 @@
 }
 
 .logo {
-	width: 50px;
 	height: auto;
 	@include breakpoint(medium down) {
 		width: 120px;
@@ -187,6 +186,19 @@ img[data-src] {
 		}
 	}
 
+	&.brushybuddy {
+		.bg {
+			@extend %plum-plate;	
+			position: relative;
+			margin-bottom: 10vh;
+		}
+		.concept {
+			img {
+				padding: 0 15px 15px 0
+			}
+		}
+	}
+
 	.intro {
 		height: 40vh;
 		//text-align: center;
@@ -311,6 +323,10 @@ figure.right-inline {
 	@include breakpoint(medium down) {
 		float: none
 	}
+}
+
+.top-logo {
+	margin-top: 40px;
 }
 
 @import "homepage";

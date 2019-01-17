@@ -33,3 +33,7 @@ $bold-weight: 700;
     background: linear-gradient(to bottom, rgba(75,198,184,1) 0%,rgba(73,181,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4bc6b8', endColorstr='#49b5c1',GradientType=0 ); /* IE6-9 */
 }
+
+%plum-plate {
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
