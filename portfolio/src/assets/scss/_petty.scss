@@ -156,16 +156,29 @@ figure.chapter-image.down-30 {
 		width:40%;	
 		overflow: hidden;
 		display: inline-block;
+		&.full {
+			width: inherit;
+		}
 	}
-	.read {
+	.text {
 		display: inline-block;
 		margin: 15px;
 		width: 50%;
 		vertical-align: top;
+		.read {
+			margin-top: 0;
+		}
+	}
+	.cons {
+		font-style: italic;
 	}
 	.story-title {
 		font-weight: bold;
 		margin-left: 30px;
+		margin-bottom: 0;
+	}
+	.story-caption {
+		text-align: center;
 		margin-bottom: 0;
 	}
 }
