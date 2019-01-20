@@ -113,7 +113,7 @@ figure.chapter-image.down-30 {
 }
 
 .inline-one-third {
-	img, video {
+	> * {
 		display: inline;
 		font-size: 0;
 		text-align: center;
