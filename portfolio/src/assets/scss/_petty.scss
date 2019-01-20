@@ -112,9 +112,14 @@ figure.chapter-image.down-30 {
 	}
 }
 
-.inline-one-third img {
-	display: inline;
-	width: 32%
+.inline-one-third {
+	img, video {
+		display: inline;
+		font-size: 0;
+		text-align: center;
+		width: 32%;
+		vertical-align: top;
+	}
 }
 
 .preview-screen {
@@ -180,6 +185,24 @@ figure.chapter-image.down-30 {
 	.story-caption {
 		text-align: center;
 		margin-bottom: 0;
+	}
+}
+
+.sketches {
+	img {
+		max-height: 400px;
+		margin: 0 auto;
+	}
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;	
+}
+
+.brushybuddy {
+	.gallery-padding {
+		> * {
+			padding: 30px;
+		}
 	}
 }
 

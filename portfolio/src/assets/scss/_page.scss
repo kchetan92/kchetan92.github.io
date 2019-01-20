@@ -174,8 +174,10 @@ img[data-src] {
 	}
 
 	&.gale {
-		.bg {
+		>.bg {
 			@extend %green-blue-bg;	
+		}
+		.bg {
 			position: relative;
 			margin-bottom: 10vh;
 		}
@@ -187,8 +189,10 @@ img[data-src] {
 	}
 
 	&.brushybuddy {
-		.bg {
-			@extend %plum-plate;	
+		>.bg {
+			@extend %plum-plate;
+		}
+		.bg {	
 			position: relative;
 			margin-bottom: 10vh;
 		}
