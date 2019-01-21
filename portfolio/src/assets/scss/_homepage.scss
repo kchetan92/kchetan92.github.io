@@ -88,13 +88,13 @@
             width: 200px;
             height: auto;   
             position: absolute;
-            left: 00px;
-            transform: rotate(20deg);
+            left: 140px;
+            transform: rotate(10deg);
             top: -72px;
         }
     }
     .brushybuddy {
-        margin-bottom: 200px;
+        margin-bottom: 300px;
         .image-bg {
             @extend %plum-plate;
         }
