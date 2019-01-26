@@ -60,6 +60,10 @@ figure.chapter-image.down-30 {
 	width: 49%;
 }
 
+.quarter-size-image {
+	width: 25%;
+}
+
 .per70-size-image {
 	width: 70%;
 }
@@ -212,6 +216,14 @@ figure.chapter-image.down-30 {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.athletejuvo {
+	.affinity-wall {
+		img {
+			margin-top: 20px;
+		}
+	}
 }
 
 
