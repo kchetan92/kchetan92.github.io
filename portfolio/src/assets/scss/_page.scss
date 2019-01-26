@@ -151,10 +151,11 @@ img[data-src] {
 	h3 {
 		//@extend %sans-serif;
 		margin: 120px 0 0;
-		font-weight: 200;
+		font-weight: 400;
+		color: #7b7b7b;
 		//font-weight: $regular-weight;
 	}
-	.fact {
+	.facts {
 		h3 {
 			margin: 18px 0 0;
 			@extend %sans-serif;
@@ -203,6 +204,34 @@ img[data-src] {
 		}
 		.bold {
 			
+		}
+	}
+
+	&.athletejuvo {
+		>.bg {
+			@extend %yellow-gradient;
+		}
+		.bg {	
+			position: relative;
+			margin-bottom: 10vh;
+		}
+		.concept {
+			img {
+				padding: 0 15px 15px 0
+			}
+		}
+		.bold {
+			
+		}
+
+		.intro .title {
+			img {
+				height: 55vh;
+				width: auto;
+			}
+			p {
+				color: #353535;
+			}
 		}
 	}
 
@@ -334,6 +363,10 @@ figure.right-inline {
 
 .top-logo {
 	margin-top: 40px;
+}
+
+.text-center {
+	text-align: center;
 }
 
 @import "homepage";

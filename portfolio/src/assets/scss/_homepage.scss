@@ -82,7 +82,7 @@
     .chi {
         margin-bottom: 200px;
         .image-bg {
-            background-color: #FFD448;
+            @extend %yellow-gradient
         }
         img {
             width: 200px;
