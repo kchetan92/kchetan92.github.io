@@ -209,7 +209,7 @@ img[data-src] {
 
 	&.athletejuvo {
 		>.bg {
-			@extend %yellow-gradient;
+			@extend %yellow-gradient-radial;
 		}
 		.bg {	
 			position: relative;

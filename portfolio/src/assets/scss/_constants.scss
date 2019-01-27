@@ -40,5 +40,9 @@ $bold-weight: 700;
 
 %yellow-gradient {
 	background-color: #fbb034;
-	background-image: linear-gradient(0deg, #fbb034 0%, #ffdd00 74%);
+	background-image: linear-gradient(0deg, rgba(254,134,24,1),  rgba(255,197,27,1) 88.8%);
+}
+
+%yellow-gradient-radial {
+	background-image: radial-gradient( circle 100vw at 52.7% 55%,  rgba(255,197,27,1) 0%, rgba(254,134,24,1) 88.8% );
 }
