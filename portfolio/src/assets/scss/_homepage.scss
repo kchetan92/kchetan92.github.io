@@ -3,9 +3,8 @@
 #introduction {
     margin-top: 80px;
     color: #353535;
-    .hi h1 {
-        @extend %serif;
-        font-size: 48px;  
+    .hi img {
+        padding: 30px 0;
     }
     .subtitle {
         @extend %sans-serif;
@@ -99,11 +98,11 @@
             @extend %plum-plate;
         }
         img {
-            width: 400px;
-            height: auto;   
+            height: 400px;
+            width: auto;   
             position: absolute;
-            left: 0;
-            top: 20px;
+            left: 100px;
+            top: -40px;
         }
     }
 }

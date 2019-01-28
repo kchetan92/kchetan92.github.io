@@ -205,6 +205,13 @@ img[data-src] {
 		.bold {
 			
 		}
+
+		.intro .title {
+			img {
+				height: 55vh;
+				width: auto;
+			}
+		}
 	}
 
 	&.athletejuvo {
@@ -306,26 +313,6 @@ q {
 			text-align: left;
 		}
 	}
-}
-
-.article-bg-image {
-	width: 100%;
-	height: 400px;
-}
-
-.wasd .article-bg-image {
-	background-size: cover !important;
-	@include breakpoint(medium down) {
-		height: 53vw;	
-	}
-}
-
-.brand .article-bg-image {
-	height: 600px;
-	@include breakpoint(medium down) {
-		height: 75vw;	
-	}
-	background-size: cover;
 }
 
 .image-paper-prototype > div {
