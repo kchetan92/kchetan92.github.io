@@ -1,25 +1,122 @@
 @import "constants";
 
+
+.header {
+	text-align: right;
+}
+
+.open-button {
+    @extend %sans-serif;
+	a {
+		color: #4a4a4a;
+		text-decoration: none;
+		margin-left: 12px;
+		margin-top: 20px;
+
+		padding: 0 2px 7px 20px;
+		//border-bottom: 4px solid #000;
+	}
+}
+
+.logo {
+	height: auto;
+	@include breakpoint(medium down) {
+		width: 120px;
+	}
+}
+
+.title-image img {
+	max-width: 120px;
+	@include breakpoint(medium down) {
+		max-width: none;
+		height: 60px;
+	}
+}
+
+.top-bg {
+	@extend %st-petersberg;
+	width: 100%;
+	height: 100vh;
+    border: 5vh white solid;
+    position: relative;
+}
+
+.top-logo {
+	padding: 5vh 5vh 0;
+	img {
+		width: 200px;
+		height: auto;
+		float: left;
+	}
+	header {
+		float: right;
+	}
+}
+
 #introduction {
-    margin-top: 80px;
+    margin-top: 170px;
     color: #353535;
     .hi img {
         padding: 30px 0;
     }
     .subtitle {
         @extend %sans-serif;
-        color: #4A4A4A;
-        font-size: 24px;
+        font-weight: 400;
+        color: #4a4a4a;
+        font-size: 30px;
         line-height: 1.415;
         p {
             margin: 0;
         }
+        .underline{
+            position: relative;
+            display: inline-block;
+            z-index: 10;
+            &:before {
+                content: '';
+                width: 100%;
+                height: 6px;
+                border-radius: 20px;
+                opacity: 0.5;
+                display: inline;
+                position: absolute;
+                background: $theme-green;
+                left: 0;
+                bottom: 10px;
+                z-index: -1;
+            }
+        }
     }
+}
+
+.blade-cover {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.blade {
+    width: 3px;
+    height: 19px;
+    border-radius: 10px;
+    background: #f0f3f7;
+    &.color {
+        background: $theme-green;
+    }
+}
+
+.field {
+    font-size: 0;
+    display: block;
+    position: absolute;
+    bottom: 2vh;
+    right: 2vh;
 }
 
 #projects {
     margin-top: 200px;
-    overflow-x: hidden;
+    overflow-x: visible;
     @extend %sans-serif;
     p {
         margin: 0;
@@ -34,7 +131,7 @@
         color: #767676;
     }
     .project {
-        margin-bottom: 150px;
+        margin-bottom: 300px;
     }
 
     .image-container {
@@ -43,24 +140,7 @@
             z-index: 10;
             position: relative;
         }
-        .image-bg {
-            position: absolute;
-            width: 500%;
-            height: 300px;
-            top: 0;
-            z-index: 1;
-        }
-        &.left {
-            .image-bg {
-                left: 200px;
-            }
-        }
-
-        &.right {
-            .image-bg {
-                right: 200px;
-            }
-        }
+        
     }
 
     .right {
@@ -68,21 +148,21 @@
     }
 
     .gale {
-        .image-bg {
-            @extend %green-blue-bg;
-        }
         img {
             height: 260px;
             width: auto;
             margin: 20px 0;
         }
+        .image-bg img {
+			position: absolute;
+			left: -20%;
+			top: -28%;
+			z-index: 0;height: 137%;
+		}
     }
 
     .chi {
-        margin-bottom: 200px;
-        .image-bg {
-            @extend %yellow-gradient
-        }
+        margin-bottom: 400px;
         img {
             width: 200px;
             height: auto;   
@@ -91,18 +171,30 @@
             transform: rotate(10deg);
             top: -72px;
         }
+        .image-bg img {
+            position: absolute;
+            left: -2%;
+            top: -86%;
+            z-index: -1;
+            height: 300%;
+            width: auto;
+		}
     }
     .brushybuddy {
-        margin-bottom: 300px;
-        .image-bg {
-            @extend %plum-plate;
-        }
+        margin-bottom: 500px;
         img {
             height: 400px;
             width: auto;   
             position: absolute;
-            left: 100px;
             top: -40px;
+            left: 0;
         }
+        .image-bg img {
+            position: absolute;
+            left: -16%;
+            top: -32%;
+            z-index: -1;
+            height: 230%;
+		}
     }
 }

@@ -8,41 +8,6 @@
 // https://coolors.co/b0d0d3-c08497-f7af9d-f7e3af-f3eec3
 
 
-.header {
-	text-align: right;
-}
-
-.open-button {
-	font-weight: bold;
-	a {
-		color: #000;
-		text-decoration: none;
-		margin-left: 42px;
-		margin-top: 20px;
-
-		padding: 0 2px 7px 20px;
-		//border-bottom: 4px solid #000;
-		&:hover {
-			color: $theme-green;
-			border-color: $theme-green;
-		}
-	}
-}
-
-.logo {
-	height: auto;
-	@include breakpoint(medium down) {
-		width: 120px;
-	}
-}
-
-.title-image img {
-	max-width: 120px;
-	@include breakpoint(medium down) {
-		max-width: none;
-		height: 60px;
-	}
-}
 
 ///////////
 //
@@ -346,10 +311,6 @@ figure.right-inline {
 	@include breakpoint(medium down) {
 		float: none
 	}
-}
-
-.top-logo {
-	margin-top: 40px;
 }
 
 .text-center {
