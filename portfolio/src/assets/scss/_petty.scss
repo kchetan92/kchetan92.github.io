@@ -202,10 +202,48 @@ figure.chapter-image.down-30 {
 	text-align: center;	
 }
 
+@keyframes slider {
+	0%, 28.9% {
+		left: 11%
+	}
+	33.4%, 62.3% {
+		left: -117%;
+	}
+	66.6%, 100%{
+		left: -243%
+	}
+	
+}
+
 .brushybuddy {
 	.gallery-padding {
 		> * {
 			padding: 30px;
+		}
+	}
+	.introduce {
+		position: relative;
+		.phone-frame {
+			z-index: 2;
+		}
+		.steps	{
+			position: absolute;
+			top: 23%;
+			left: 11%;
+			width: 338.33%;
+			z-index: 0;
+			animation-duration: 6.9s;
+			animation-name: slider;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-out;
+		}
+		.steps-container {
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 60%;
+			overflow: hidden;
+			left: 17%;
 		}
 	}
 }
