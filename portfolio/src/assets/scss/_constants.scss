@@ -13,6 +13,12 @@ $bold-weight: 700;
 	
 }
 
+@import url('https://rsms.me/inter/inter.css');
+
+%inter {
+	font-family: 'Inter', sans-serif;
+}
+
 %serif {
 	font-family: 'Domine', serif;
 }
@@ -46,3 +52,13 @@ $bold-weight: 700;
 %yellow-gradient-radial {
 	background-image: radial-gradient( circle 100vw at 52.7% 55%,  rgba(255,197,27,1) 0%, rgba(254,134,24,1) 88.8% );
 }
+
+%st-petersberg {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f7fa+0,c3cfe2+100 */
+	background: #f5f7fa; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #f5f7fa 0%, #c3cfe2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #f5f7fa 0%,#c3cfe2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #f5f7fa 0%,#c3cfe2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f7fa', endColorstr='#c3cfe2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+

@@ -163,12 +163,31 @@ $(document).ready(function(){
         };
     })
 
+    const allBlades = document.querySelectorAll('.blade');
+    let mouseCoordinates = {};
+
+    window.onmousemove = (ev) => {
+        mouseCoordinates.x = ev.clientX;
+        mouseCoordinates.y = ev.clientY;
+        point();
+    }
+
+    function point() {
+        allBlades.forEach((el) => {
+            let elCoordinates = el.getBoundingClientRect();
+            let angle = Math.atan(-1 * (mouseCoordinates.y - elCoordinates.y)/(elCoordinates.x - mouseCoordinates.x))*(180/3.141) + 90;
+            el.style.transform = `rotate(${angle}deg)`;
+        })
+    }
+
     setTimeout(function(){ 
         console.image(consoleImage);
     }, 5000);
-    console.log("I can design and develop! I am looking for Summer 2018 Internship!");
+    console.log("I can design and develop! I am looking for Full time opportunities!");
 
 })
+
+
 
 
 
