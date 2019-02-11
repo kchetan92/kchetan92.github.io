@@ -166,11 +166,15 @@ $(document).ready(function(){
     const allBlades = document.querySelectorAll('.blade');
     let mouseCoordinates = {};
 
-    window.onmousemove = (ev) => {
+    window.onmousemove = (ev) => {updateField(ev)};
+    window.onscroll = (ev) => {updateField(ev)};
+
+    const updateField = (ev) => {
         mouseCoordinates.x = ev.clientX;
         mouseCoordinates.y = ev.clientY;
         point();
     }
+
 
     function point() {
         allBlades.forEach((el) => {
