@@ -2,7 +2,10 @@
 
 
 .header {
-	text-align: right;
+    @include breakpoint(large) {
+        text-align: right;
+    }
+    display: block;
 }
 
 .open-button {
@@ -34,15 +37,22 @@
 }
 
 .top-bg {
-	@extend %st-petersberg;
+    @extend %st-petersberg;
+    @include breakpoint(large) {
+        border: 5vh white solid;
+        height: 100vh;
+    }
 	width: 100%;
-	height: 100vh;
-    border: 5vh white solid;
+    border: 0;
     position: relative;
 }
 
 .top-logo {
-	padding: 5vh 5vh 0;
+    @include breakpoint(large) {
+        padding: 5vh 5vh 0;
+    }
+    padding: 7vw 5vw 0;
+	
 	img {
 		width: 200px;
 		height: auto;
@@ -54,7 +64,11 @@
 }
 
 #introduction {
-    margin-top: 170px;
+    @include breakpoint(large) {
+        margin-top: 170px;
+    }
+    margin: 20vw 5vw 0;
+    padding-bottom: 20vw;
     color: #353535;
     .hi img {
         padding: 30px 0;
@@ -65,6 +79,7 @@
         color: #4a4a4a;
         font-size: 30px;
         line-height: 1.415;
+        margin: 0;
         p {
             margin: 0;
         }
@@ -115,7 +130,10 @@
 }
 
 #projects {
-    margin-top: 200px;
+    @include breakpoint(large) {
+        margin-top: 200px;
+    }
+    margin: 20vw 5vw 0;
     overflow-x: visible;
     @extend %sans-serif;
     p {
@@ -131,7 +149,10 @@
         color: #767676;
     }
     .project {
-        margin-bottom: 300px;
+        @include breakpoint(large) {
+            margin-bottom: 300px;
+        }
+        margin-bottom: 100px;
     }
 
     .image-container {
@@ -149,7 +170,9 @@
 
     .gale {
         img {
-            height: 260px;
+            @include breakpoint(large) {
+                height: 260px;
+            }
             width: auto;
             margin: 20px 0;
         }
@@ -158,18 +181,29 @@
 			left: -20%;
 			top: -28%;
 			z-index: 0;height: 137%;
-		}
+        }
+        .image-container {
+            @include breakpoint(large) {
+                margin-top: 0;
+            }
+            margin-top: 50px;
+        }
     }
 
     .chi {
         margin-bottom: 400px;
         img {
-            width: 200px;
-            height: auto;   
+            @include breakpoint(large) {
+                width: 200px;
+                height: auto;   
+                max-height: inherit;
+                left: 140px;
+                top: -72px;
+            }
             position: absolute;
-            left: 140px;
+            max-height: 300px;
+            width: auto;
             transform: rotate(10deg);
-            top: -72px;
         }
         .image-bg img {
             position: absolute;
@@ -183,10 +217,13 @@
     .brushybuddy {
         margin-bottom: 500px;
         img {
-            height: 400px;
+            @include breakpoint(small up) {
+                height: 400px;
+                top: -40px;
+            }
+            top: 20px;
             width: auto;   
             position: absolute;
-            top: -40px;
             left: 0;
         }
         .image-bg img {
