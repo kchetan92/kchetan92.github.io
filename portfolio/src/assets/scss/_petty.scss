@@ -168,6 +168,13 @@ figure.chapter-image.down-30 {
 		&.full {
 			width: inherit;
 		}
+		&.video {
+			border-radius: 0;
+			video {
+				border-radius: 15px;
+				width: 100%;
+			}
+		}
 	}
 	.text {
 		display: inline-block;
@@ -190,6 +197,10 @@ figure.chapter-image.down-30 {
 		text-align: center;
 		margin-bottom: 0;
 	}
+}
+
+.full-video video {
+	width: 100%;
 }
 
 .sketches {
