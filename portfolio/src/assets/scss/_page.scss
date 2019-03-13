@@ -207,6 +207,26 @@ img[data-src] {
 		}
 	}
 
+	&.brand {
+		>.bg {
+			@extend %heavy-rain;
+			.skills {
+				position: relative;
+			}
+		}
+
+		.intro {
+			.title {
+				p {
+				color: #353535;
+				}
+				img {
+					width: 20vw;
+				}
+			}
+		}
+	}
+
 	.intro {
 		height: 40vh;
 		//text-align: center;
@@ -233,7 +253,8 @@ img[data-src] {
 			.subtitle {
 				padding-top: 20px;
 				p {
-					@extend %circular-bold;
+					@extend %sans-serif;
+					font-weight: 600;
 					font-size: 16px;	
 				}
 			}
