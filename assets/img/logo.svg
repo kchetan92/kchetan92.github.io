@@ -1,1 +1,15 @@
-<svg width="422" height="422" viewBox="0 0 422 422" xmlns="http://www.w3.org/2000/svg"><title>Group</title><g fill="none" fill-rule="evenodd"><path d="M0 0h422v422H0V0zm27 27v367h367V27H27z" fill="#000"/><path fill="#000" d="M80 80h51.931v140.069l65.463-68.023h61.44L187.52 221.53l79.36 119.589h-62.903l-51.931-84.48-20.115 19.383v65.097H80z"/><circle fill="#40BCA9" cx="312.5" cy="310.5" r="30.5"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="422px" height="422px" viewBox="0 0 422 422" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4" transform="translate(-101.000000, -128.000000)">
+            <g id="Group" transform="translate(101.000000, 128.000000)">
+                <path d="M0,0 L422,0 L422,422 L0,422 L0,0 Z M27,27 L27,394 L394,394 L394,27 L27,27 Z" id="Combined-Shape" fill="#000000"></path>
+                <polygon id="k" fill="#000000" points="80 80 131.931429 80 131.931429 220.068571 197.394286 152.045714 258.834286 152.045714 187.52 221.531429 266.88 341.12 203.977143 341.12 152.045714 256.64 131.931429 276.022857 131.931429 341.12 80 341.12"></polygon>
+                <circle id="Oval" fill="#40BCA9" cx="312.5" cy="310.5" r="30.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
