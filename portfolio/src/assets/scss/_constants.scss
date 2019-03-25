@@ -71,3 +71,11 @@ background: linear-gradient(to bottom, rgba(226,235,240,1) 0%,rgba(207,217,223,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2ebf0', endColorstr='#cfd9df',GradientType=0 ); /* IE6-9 */
 }
 
+%party-bliss {
+	background: rgb(171,216,227);
+	background: -moz-linear-gradient(0deg, rgba(171,216,227,1) 0%, rgba(245,250,251,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(171,216,227,1) 0%, rgba(245,250,251,1) 100%);
+	background: linear-gradient(0deg, rgba(171,216,227,1) 0%, rgba(245,250,251,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abd8e3",endColorstr="#f5fafb",GradientType=1);
+}
+

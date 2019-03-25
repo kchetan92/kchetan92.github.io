@@ -227,6 +227,27 @@ img[data-src] {
 		}
 	}
 
+	&.midojo {
+		>.bg {
+			@extend %party-bliss;
+			.skills {
+				position: relative;
+			}
+		}
+
+		.intro {
+			.title {
+				p {
+				color: #353535;
+				}
+				img {
+					width: 30vw;
+					right: -10vw;
+				}
+			}
+		}
+	}
+
 	.intro {
 		height: 40vh;
 		//text-align: center;
