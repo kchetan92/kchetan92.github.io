@@ -15,6 +15,10 @@
 //
 ///////////
 
+body {
+	overflow-x: hidden;
+}
+
 footer {
 	background-color: $theme-grey-bg;
 	padding: 15px 0;
@@ -241,7 +245,7 @@ img[data-src] {
 				color: #353535;
 				}
 				img {
-					width: 30vw;
+					width: 35vw;
 					right: -10vw;
 				}
 			}

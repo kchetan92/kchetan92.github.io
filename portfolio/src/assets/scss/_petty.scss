@@ -286,6 +286,37 @@ ul.small-points {
 	}
 }
 
+#lightbox {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+	z-index: 100;
+	text-align: center;
+	display: none;
+	&.open {
+		display: block;
+	}
+	overflow: hidden;
+	cursor: url("/assets/img/close.png"), auto;
+	.closeIcon {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.main {
+		height: 100vh;
+		max-height: 100vh;
+		margin: 20px auto;
+		cursor: default;
+	}
+}
+
+.lightbox-enable {
+	cursor: pointer;
+}
+
 
 
 

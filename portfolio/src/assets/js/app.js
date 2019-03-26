@@ -149,10 +149,53 @@ function highlightNavigate(){
     }
 }
 
+function initLightBox() {
+    const allImages = document.getElementsByClassName("lightbox-enable");
+    const modal = document.getElementById("lightbox");
+    const modalImage = modal.getElementsByClassName("main")[0];
+    const closeImage = modal.getElementsByClassName("closeIcon")[0];
+    const body = document.getElementsByTagName("body")[0];
+
+    function openModal(imSRC) {
+        modal.classList.remove("close");
+        modal.classList.add("open");
+        modalImage.setAttribute("src", imSRC);
+        body.style.overflowY = "hidden";
+    }
+
+    function closeModal() {
+        modal.classList.remove("open");
+        modal.classList.add("close");
+        modalImage.setAttribute("src", "")
+        body.style.overflowY = "auto";
+    }
+
+    modalImage.addEventListener("click", e => {
+        e.preventDefault();
+        e.stopPropagation();
+    })
+
+    modal.addEventListener("click", e => {
+        closeModal();
+    })
+
+    closeImage.addEventListener("click", e => {
+        closeModal();
+    })
+
+    for(let i = allImages.length; i--; i> 0) {
+        allImages[i].addEventListener("click", im => {
+            let src = im.target.getAttribute("src");
+            openModal(src);
+        })
+    }
+}
+
 $(document).ready(function(){
 
 	initHeader();
-	initSlider();
+    initSlider();
+    initLightBox();
     highlightNavigate();
 
     document.querySelectorAll("img[data-src]").forEach(function(el){
