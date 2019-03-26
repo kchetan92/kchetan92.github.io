@@ -344,6 +344,9 @@ figure.article-image {
 	figcaption.full {
 		margin-right: 0;
 	}
+	&.center {
+		text-align: center;
+	}
 }
 figure.right-inline {
 	float: right;
