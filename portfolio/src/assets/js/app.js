@@ -150,6 +150,9 @@ function highlightNavigate(){
 }
 
 function initLightBox() {
+    // oops, something went wrong;  
+    return;
+
     const allImages = document.getElementsByClassName("lightbox-enable");
     const modal = document.getElementById("lightbox");
     const modalImage = modal.getElementsByClassName("main")[0];
