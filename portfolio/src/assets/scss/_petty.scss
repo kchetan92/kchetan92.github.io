@@ -79,6 +79,14 @@ figure.chapter-image.down-30 {
 	margin-bottom: 30px;
 }
 
+.top-margin-150 {
+	margin-top: 150px;
+}
+
+.top-margin-30 {
+	margin-top: 30px;
+}
+
 .wasd .sqr-buttons {
 	float: right;
 	.picture-links-container {
@@ -316,6 +324,14 @@ ul.small-points {
 // .lightbox-enable {
 // 	cursor: pointer;
 // }
+
+
+.info-section {
+	margin: 18px 0;
+	p.read, ul {
+		margin :0;
+	}
+}
 
 
 
