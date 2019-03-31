@@ -386,6 +386,11 @@ figure.right-inline {
 		color: #888;
 		text-decoration: none;
 	}
+	li.active {
+		a {
+			color: red;
+		}
+	}
 }
 
 @import "homepage";

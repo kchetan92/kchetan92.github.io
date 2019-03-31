@@ -94,7 +94,52 @@ function initHeader(){
 
 function initNav() {
     const allTitles = document.querySelectorAll('[nav-title]');
-    const navElement = document.getElementById('sticky-nav').getElementsByTagName('ul')[0];
+    let navElement = document.getElementById('sticky-nav');
+    
+    if(navElement && allTitles.length > 0) {
+        navElement = navElement.getElementsByTagName('ul')[0]
+    } else {
+        return;
+    }
+
+    const dir = []
+
+    allTitles.forEach(el => {
+        const newElement = document.createElement('li');
+        newElement.innerHTML = `<a href="#${el.getAttribute("id")}">${el.innerText}</a>`;
+        navElement.appendChild(newElement);
+        dir.push({
+            "nav": newElement,
+            "page": document.getElementById(el.getAttribute("id"))
+        })
+    })
+
+    setInterval(function(){
+
+        const newActive = [];
+        
+        dir.forEach(el => {
+            const thisTop = el.page.getBoundingClientRect().top;
+            if(thisTop > 0 && thisTop < (window.innerHeight - 100)) {
+                //visible
+                newActive.push(el);
+            }
+        });
+
+        if(newActive.length > 0) {
+            dir.forEach(el => {
+                if(el.nav.classList.contains("active")) {
+                    el.nav.classList.remove("active");
+                }
+            })
+            newActive.forEach(el => {
+                el.nav.classList.add("active");
+            })
+        }
+
+    }, 300)
+
+
 }
 
 function initSlider(){
@@ -205,6 +250,7 @@ $(document).ready(function(){
     initSlider();
     initLightBox();
     highlightNavigate();
+    //initNav();
 
     document.querySelectorAll("img[data-src]").forEach(function(el){
         console.log('img lazyloaded ');
