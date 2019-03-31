@@ -92,6 +92,11 @@ function initHeader(){
 	}
 }
 
+function initNav() {
+    const allTitles = document.querySelectorAll('[nav-title]');
+    const navElement = document.getElementById('sticky-nav').getElementsByTagName('ul')[0];
+}
+
 function initSlider(){
 
     function autoplay(interval, wallop) {

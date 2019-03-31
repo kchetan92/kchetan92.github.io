@@ -12,6 +12,9 @@ import fs            from 'fs';
 import webpackStream from 'webpack-stream';
 import webpack2      from 'webpack';
 import named         from 'vinyl-named';
+import babel         from 'gulp-babel';
+import minify        from 'gulp-minify';
+import rename        from 'gulp-rename';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -116,9 +119,13 @@ function javascript() {
     .pipe(named())
     .pipe($.sourcemaps.init())
     .pipe(webpackStream(webpackConfig, webpack2))
-    .pipe($.if(PRODUCTION, $.uglify()
-      .on('error', e => { console.log(e); })
+    .pipe($.if(PRODUCTION, minify({
+      noSource: true
+    })
+      .on('error', e => { console.log(e);  })
     ))
+    //this is dangerous, but we have only one file now.
+    .pipe(rename('app.js'))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
