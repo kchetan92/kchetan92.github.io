@@ -89,14 +89,19 @@
             </div>
           </div>
         </div>
+        <div id="sticky-nav">
+          <ul>
+            <li class=""><a style="display: none"></a></li>
+          </ul>   
+      </div>
         <div class="grid-container">
           <div class="grid-x skills grid-margin-x">
             
             <div class="large-offset-2 large-8 cell">
-              <h2 class="name">Overview</h2>
+              <h2 class="name" nav-group="overview" id="overview">Overview</h2>
             </div>
             
-            <div class="large-offset-2 large-8 cell">
+            <div class="large-offset-2 large-8 cell" nav-group="overview" >
               
               <p class="read">Dental hygiene is a major concern for new parents. They are often not well informed in dental hygiene and can pass on bad habits to their children. The children’s eating habits also vastly differ from the adults and are more prone to dental problems. To add to this problem, parents are busy and do have time to supervise brushing all the time.</p>
               
@@ -104,55 +109,20 @@
               
             </div>
             
-            <div class="large-offset-2 large-3 facts">
+            <div class="large-offset-2 large-3 facts" nav-group="overview" >
               <h3>role</h3>
               <p class="read">UX Designer, Researcher, Developer, Video editor</p>
             </div>
             
-            <div class="large-offset-1 large-3 facts">
+            <div class="large-offset-1 large-3 facts" nav-group="overview" >
               <h3>duration</h3>
               <p class="read">4 months. Fall '18</p>
             </div>
             
-            <div class="large-offset-2 large-3 facts">
+            <div class="large-offset-2 large-3 facts" nav-group="overview" >
               <h3>team</h3>
               <p class="read">Chetan Keshav, Yuan Li, Sophia Chiu, Yezhi Deng</p>
             </div>
-            
-            <!-- <div class="large-offset-2 large-8 cell">
-              <h3>design decisions</h3>
-              <h2 class="name">Why BrushyBuddy works?</h2>
-            </div>
-            
-            <div class="large-offset-2 large-3 cell introduce">
-              <img src="../../assets/img/brushybuddy/mobile_app_mockup.png" class="middle-image vert-margin-image phone-frame">
-              <div class="steps-container">
-                <div class="steps">
-                  <img src="../../assets/img/brushybuddy/intro_steps.svg" alt="">
-                </div>
-              </div>
-            </div> -->
-            
-            <!-- <div class="large-offset-2 large-8 cell">
-              <h3>design principles</h3>
-              <h2 class="name">Why should BrushyBuddy work?</h2>
-            </div>
-            
-            <div class="large-offset-2 large-4 cell">
-              <p class="read">Easy to understand instructions.</p>
-            </div>
-            
-            <div class="large-4 cell">
-              <p class="read">Playful interactions</p>
-            </div>
-            
-            <div class="large-offset-2 large-4 cell">
-              <p class="read">Establish trust with parents</p>
-            </div>
-            
-            <div class="large-4 cell">
-              <p class="read">Teach. Inform. Rectify</p>
-            </div> -->
             
           </div>
         </div>
@@ -161,7 +131,7 @@
           <div class="grid-container">
             <div class="grid-x skills grid-margin-x">
               <div class="large-offset-2 large-8 cell">
-                <h3>salient features</h3>
+                <h3 nav-group="salient-features" id="salient-features">salient features</h3>
                 <h2 class="name">How BrushyBuddy works</h2>
               </div>
               <div class="large-10 large-offset-1 cell story">
@@ -211,16 +181,16 @@
               <div class="grid-container"><div class="grid-x skills grid-margin-x">
                 
                 <div class="large-offset-2 large-8 cell">
-                  <h3>research plan</h3>
+                  <h3 nav-group="research-plan" id="research-plan" >research plan</h3>
                   <h2 class="name">A reporting tool to assure parents</h2>
                 </div>
                 
-                <div class="large-10 large-offset-1 cell">
+                <div nav-group="research-plan" class="large-10 large-offset-1 cell">
                   <img src="../../assets/img/brushybuddy/research-plan.svg" class="middle-image vert-margin-image">
                 </div>
                 
                 <div class="large-offset-2 large-8 cell">
-                  <h3>background</h3>
+                  <h3 nav-group="background" id="background">background</h3>
                   <h2 class="name">Motivation</h2>
                 </div>
                 
@@ -239,11 +209,11 @@
                 </div>
                 
                 <div class="large-offset-2 large-8 cell">
-                  <h3>observation: video diary study</h3>
+                  <h3 nav-group="observation-video-diary-study" id="observation-video-diary-study">observation: video diary study</h3>
                   <h2 class="name">Understanding the end user</h2>
                 </div>
                 
-                <div class="large-offset-2 large-8 cell">
+                <div nav-group="observation-video-diary-study" class="large-offset-2 large-8 cell">
                   <p class="read">To understand the children’s behavior towards brushing, we conducted <span class="bold">video diary studies.</span> Parents were asked to record a video of their children at home brushing their teeth. We found that</p>
                   
                   <p class="read"><span class="bold">Children feel excited about the process:</span> such as filling the cup with tap water, squeezing toothpaste from tube and stirring water to wash the brush.</p>
@@ -262,23 +232,23 @@
                 
                 <div class="large-offset-2 large-8 cell">
                   <h3>Converge #1</h3>
-                  <h2 class="name">Early sketches</h2>
+                  <h2 class="name" nav-group="early-sketches" id="early-sketches">Early sketches</h2>
                   <p class="read">Based on our findings, we sketched some initial ideas to address this issue.</p>
                 </div>
                 
-                <div class="large-4 cell">
+                <div class="large-4 cell" nav-group="early-sketches">
                   <figure class="article-image idea-image">
                     <img src="../../assets/img/brushybuddy/ex_idea2.png" class="">
                     <figcaption>Water jet automatically cleans the mouth</figcaption>
                   </figure>
                 </div>
-                <div class="large-4 cell">
+                <div class="large-4 cell" nav-group="early-sketches" >
                   <figure class="article-image idea-image">
                     <img src="../../assets/img/brushybuddy/ex_idea3.png" class="">
                     <figcaption>Toothbrush becomes a game controller to play the game on mirror.</figcaption>
                   </figure>
                 </div>
-                <div class="large-4 cell">
+                <div class="large-4 cell" nav-group="early-sketches">
                   <figure class="article-image idea-image">
                     <img src="../../assets/img/brushybuddy/ex_idea1.png" class="">
                     <figcaption>Electric toothbrush monitors the area of mouth cleaned.</figcaption>
@@ -287,11 +257,11 @@
                 
                 
                 <div class="large-offset-2 large-8 cell">
-                  <h3>survey</h3>
+                  <h3 nav-group="survey" id="survey">survey</h3>
                   <h2 class="name">Validating findings</h2>
                 </div>
                 
-                <div class="large-offset-2 large-8 cell">
+                <div class="large-offset-2 large-8 cell" nav-group="survey">
                   <p class="read">The concepts developed in the previous step were <span class="bold">too broad</span>. Based on feedback from peers, we decided to conduct additional research to narrow our scope. A survey was conducted and data from 55 responses were analyzed. The findings <span class="bold">validated the interview findings.</span></p>
                   <!-- <img src="../../assets/img/brushybuddy/research_facts.png" class="half-size-image middle-image"> -->
                   
@@ -302,11 +272,11 @@
                 </div>
                 
                 <div class="large-offset-2 large-8 cell">
-                  <h3>user enactments</h3>
+                  <h3 nav-group="user-enactment" id="user-enactment">user enactments</h3>
                   <h2 class="name">Putting the concepts to test</h2>
                 </div>
                 
-                <div class="large-offset-2 large-8 cell">
+                <div nav-group="user-enactment" class="large-offset-2 large-8 cell">
                   <p class="read">Based on the survey, interview and video diary study we realized that the following factors can affect the design of the product</p>
                   <p class="read"><span class="bold">Involvement of parents.</span> We want to know how the participation of parents affect the children and parent’s peace of mind.</p>
                   <p class="read"><span class="bold">Story, music or game.</span> Different means can be adopted to develop interest in the rather monotonous activity of brushing. This is necessary to prolong the brushing activity to 2 minutes.</p>
@@ -315,13 +285,13 @@
                   <p class="read">We created a matrix to select from the combination of all the above factors and selected 5 prototypes to test with the participants. We made paper prototypes and prepares scripts for this. Following questions can help us judge the success of the chosen prototype:</p>
                 </div>
                 
-                <div class="large-8 large-offset-2 hmw">
+                <div nav-group="user-enactment" class="large-8 large-offset-2 hmw">
                   <p class="read">How might we encourage children to <span class="bold">brush teeth for enough time?</span></p>
                   <p class="read">How might we help children to <span class="bold">brush teeth thoroughly?</span></p>
                   <p class="read">How might we help parents to <span class="bold">supervise</span> children’s tooth brushing behavior?</p>
                 </div>
                 
-                <div class="large-10 large-offset-1 cell story">
+                <div nav-group="user-enactment" class="large-10 large-offset-1 cell story">
                   <div class="content">
                     <div class="image-container full">
                       <img src="../../assets/img/brushybuddy/ue_pic1.jpg" class="">
@@ -330,7 +300,7 @@
                   </div>
                 </div>
                 
-                <div class="large-10 large-offset-1 cell story">
+                <div nav-group="user-enactment" class="large-10 large-offset-1 cell story">
                   <p class="read story-title">Storytelling</p>
                   <div class="content">
                     <div class="image-container">
@@ -343,7 +313,7 @@
                   </div>
                 </div>
                 
-                <div class="large-10 large-offset-1 cell story">
+                <div nav-group="user-enactment" class="large-10 large-offset-1 cell story">
                   <p class="read story-title">Toothbrush Holder</p>
                   <div class="content">
                     <div class="image-container">
@@ -356,7 +326,7 @@
                   </div>
                 </div>
                 
-                <div class="large-10 large-offset-1 cell story">
+                <div nav-group="user-enactment" class="large-10 large-offset-1 cell story">
                   <p class="read story-title">Musical animated character</p>
                   <div class="content">
                     <div class="image-container">
@@ -368,7 +338,7 @@
                   </div>
                 </div>
                 
-                <div class="large-10 large-offset-1 cell story">
+                <div nav-group="user-enactment" class="large-10 large-offset-1 cell story">
                   <p class="read story-title">Toothbrush Holder Game</p>
                   <div class="content">
                     <div class="image-container">
@@ -380,14 +350,14 @@
                   </div>
                 </div>
                 
-                <div class="large-offset-2 large-8 cell">
+                <div nav-group="user-enactment" class="large-offset-2 large-8 cell">
                   <p class="read">
                     <span class="bold">Insights from parents</span>
                   </p>
                   <p class="read">Parents feel that they <span class="bold">must teach kids</span> how to brush their teeth. Therefore they do not want a device to replace their tutoring function entirely. However, parents do hope that some tool could be in place to help kids brush their teeth correctly when they are <span class="bold">busy or not in a good mood</span> (e.g., in a busy morning).</p>
                 </div>
                 
-                <div class="large-offset-2 large-8 cell">
+                <div nav-group="user-enactment" class="large-offset-2 large-8 cell">
                   <p class="read">
                     <span class="bold">Insights from Kids</span>
                   </p>
@@ -395,7 +365,7 @@
                 </div>
                 
                 
-                <div class="large-offset-2 large-8 cell">
+                <div nav-group="user-enactment" class="large-offset-2 large-8 cell">
                   <p class="read">
                     <span class="bold">Insights about device</span>
                   </p>
@@ -409,48 +379,48 @@
               <div class="grid-container">
                 <div class="grid-x skills grid-margin-x">
                   <div class="large-offset-2 large-8 cell">
-                    <h3>physical prototype</h3>
+                    <h3 nav-group="physical-prototype" id="physical-prototype">physical prototype</h3>
                     <h2 class="name">Building the smart mirror and toothbrush</h2>
                   </div>
                   
-                  <div class="large-offset-2 large-8 cell">
+                  <div nav-group="physical-prototype" class="large-offset-2 large-8 cell">
                     <p class="read">Based on our findings from the user enactment, we concluded that parents should be involved in this process of educating the children and the solution should not distract the user much from the primary brushing activity.</p>
                     
                     <p class="read">We propose BrushyBuddy, a friendly mascot which guides the children how to brush. The mascot is displayed behind a two-way mirror so that the child is not distracted. The sensors on the brush predict the position of the brush and send the data over Bluetooth to the mascot. The mascot ensures that all the regions of the mouth are brushed well and for long enough. This data is also sent to the parents’ mobile app for them to look at the daily or weekly brushing logs.</p>
                   </div>
-                  <div class="large-6 cell sketches">
+                  <div nav-group="physical-prototype" class="large-6 cell sketches">
                     <figure class="article-image">
                       <img src="../../assets/img/brushybuddy/sketches/brush_breakdown.png" class="">
                       <figcaption>Toothbrush encloses sensors and bluetooth module.</figcaption>
                     </figure>
                   </div>
                   
-                  <div class="large-6 cell sketches">
+                  <div nav-group="physical-prototype" class="large-6 cell sketches">
                     <figure class="article-image">
                       <img src="../../assets/img/brushybuddy/sketches/user.png" class="">
                       <figcaption>The mascot is shown on the mirror.</figcaption>
                     </figure>
                   </div>
                   
-                  <div class="large-6 large-offset-3 cell sketches">
+                  <div nav-group="physical-prototype" class="large-6 large-offset-3 cell sketches">
                     <figure class="article-image">
                       <img src="../../assets/img/brushybuddy/sketches/flowchart.png" class="">
                       <figcaption>Toothbrush communicates with the LCD screen and a remote server.</figcaption>
                     </figure>
                   </div>
                   
-                  <div class="large-8 large-offset-2 cell">
+                  <div nav-group="physical-prototype" class="large-8 large-offset-2 cell">
                     <p class="read bold">Smart mirror</p>
                     <p class="read">To make the two-way mirror, I pasted a reflective coating on an acrylic sheet and put an LCD screen behind the screen. The mirror reflected perfectly when nothing was displayed on the screen and showed only the mascot when shown.</p>
                   </div>
                   
-                  <div class="large-12 cell inline-one-third gallery-padding">
+                  <div nav-group="physical-prototype" class="large-12 cell inline-one-third gallery-padding">
                     <img src="../../assets/img/brushybuddy/two_way1.jpg" class="">
                     <img src="../../assets/img/brushybuddy/two_way0.jpg" class="">
                     <img src="../../assets/img/brushybuddy/two_way2.jpg" class="">
                   </div>
                   
-                  <div class="large-8 large-offset-2 cell">
+                  <div nav-group="physical-prototype" class="large-8 large-offset-2 cell">
                     <p class="read bold">Toothbrush with sensors</p>
                     <p class="read">This prototype has a toothbrush fixed with an MPU6050 3 Axis Accelerometer Gyroscope Module, Arduino Nano and Bluetooth module. Since these electronic components are meant for prototyping, the form factor is quite large. The sensors can be implemented on a smaller chip as well. The monitor can be run with a Raspberry Pi.</p>
                   </div>
@@ -464,7 +434,7 @@
                     </div>
                     
                     <div class="large-8 large-offset-2 cell">
-                      <p class="read bold">Demo Video</p>
+                      <p class="read bold" nav-group="video" id="video">Demo Video</p>
                       <p class="read">I enjoyed working on the final video for this project. This was my first attempt at videography and editing.</p>
                       <p class="read">
                         <iframe width="100%" height="400px" src="https://www.youtube.com/embed/y7nz_yDx1xo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -503,8 +473,7 @@
     			<a href="https://www.behance.net/kchetan92" target="_blank" >Behance</a>
     			<a href="https://github.com/kchetan92" target="_blank" >Github</a>
     			<a href="https://www.instagram.com/kchetan92/" target="_blank" >Instagram</a>
-    			<a href="/assets/Chetan_Keshav_resume.pdf" target="_blank" >Resume</a>
-    			<a href="https://docs.google.com/presentation/d/15rvU9wJfDBNjFpJDvR7GTTbGvvz86SYLdJWuOdBEwgA/edit?usp=sharing" target="_blank" >For Google</a>
+    			<a href="/assets/Chetan_Keshav_resume.pdf" target="_blank" >Resume</a>	
     	  	</div>
     
     
