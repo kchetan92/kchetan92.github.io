@@ -84,7 +84,8 @@ function sass() {
   return gulp.src('src/assets/scss/app.scss')
     .pipe($.sourcemaps.init())
     .pipe($.sass({
-      includePaths: PATHS.sass
+      includePaths: PATHS.sass,
+      sourceComments: true
     })
       .on('error', $.sass.logError))
     .pipe($.autoprefixer({
