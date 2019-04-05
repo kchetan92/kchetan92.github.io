@@ -37,10 +37,10 @@ prev_name: Water Connection Transition
             <div class="grid-x skills grid-margin-x">
                 
                 <div class="large-offset-2 large-8 cell">
-                    <h2 class="name" nav-title id="overview">Overview</h2>
+                    <h2 class="name" nav-group="overview" id="overview">Overview</h2>
                 </div>
                 
-                <div class="large-offset-2 large-8 cell">
+                <div nav-group="overview" class="large-offset-2 large-8 cell">
                     
                     <p class="read">MiDojo is a networking app for professionals and students to seek mentorship. Mentorship is known to do wonders for one's career growth. From the initial research, I learned that most mentorship connections are made in the workplace, professional events, etc. This creates a rather tall barrier for people to approach each other. Even mentees are often confused about this relationship. If they expect a lot from the mentorship, the mentor will be unhappy. A steady loop of smart questions, feedback and results can work in their favor.</p>
                     
@@ -48,32 +48,32 @@ prev_name: Water Connection Transition
                     
                 </div>
                 
-                <div class="large-offset-2 large-3 facts">
+                <div nav-group="overview" class="large-offset-2 large-3 facts">
                     <h3>role</h3>
                     <p class="read">UX Designer & Researcher</p>
                 </div>
                 
-                <div class="large-offset-1 large-3 facts">
+                <div nav-group="overview" class="large-offset-1 large-3 facts">
                     <h3>Design Tools</h3>
                     <p class="read">Sketch, Illustrator, Material Design Plugin</p>
                 </div>
                 
                 
                 <div class="large-offset-2 large-8 cell">
-                    <h2 class="name" nav-title id="prompt">Prompt</h2>
+                    <h2 class="name" nav-group="prompt"  id="prompt">Prompt</h2>
                 </div>
                 
-                <div class="large-offset-2 large-8 cell">
+                <div nav-group="prompt" class="large-offset-2 large-8 cell">
                     
                     <p class="read">Mentoring can be a great way to share knowledge and help someone be successful in their personal or professional life. But many potential mentors are often too busy to commit to regular meetings, or they have a hard time connecting with people seeking help. Design an experience where prospective mentors and mentees can be matched, based on similar interests, location, and availability. </p>
                     
                 </div>
                 
                 <div class="large-offset-2 large-8 cell">
-                    <h2 class="name" nav-title id="research-findings">Research Findings</h2>
+                    <h2 class="name" nav-group="research-findings" id="research-findings">Research Findings</h2>
                 </div>
                 
-                <div class="large-offset-2 large-4 cell">
+                <div nav-group="research-findings" class="large-offset-2 large-4 cell">
                     <div class="info-section">
                         <p class="read accent-color bold">Mentors are</p>
                         <p class="read">Expereinced professionals, who may have only a few more years of experience than the mentee.</p>
@@ -117,7 +117,7 @@ prev_name: Water Connection Transition
                     </div>
                 </div>
 
-                <div class="large-4 cell">
+                <div nav-group="research-findings" class="large-4 cell">
                     <div class="info-section">
                         <p class="read accent-color bold">Mentees are</p>
                         <p class="read">Anyone who seeks advice to further their career or hobby.</p>
@@ -154,33 +154,30 @@ prev_name: Water Connection Transition
                 
                 
                 <div class="large-8 large-offset-2 cell">
-                    <h2 class="name" nav-title id="high-fidelity-prototype">High Fidelity Prototype</h2>
+                    <h2 class="name" nav-group="high-fidelity-prototype" id="high-fidelity-prototype">High Fidelity Prototype</h2>
                 </div>
                 
                 
                 
                 
                 
-                <div class="large-3 large-offset-2 cell">
+                <div class="large-3 large-offset-2 cell" nav-group="high-fidelity-prototype" >
                     <img src="{{root}}assets/img/midojo/1_home.png" class="vert-margin-image lightbox-enable">
                 </div>
                 
-                <div class="large-4 large-offset-1 cell mockup-description align-self-middle">
+                <div class="large-4 large-offset-1 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                     <p class="read bold">Welcome Page</p>
                     <p class="read">The mentor and mentee can use the same app to get on MiDojo. The welcome screen has a standard login and signup options.</p>
                 </div>
                 
-                
-                
-                
-                
-                <div class="large-4 large-offset-2 cell mockup-description align-self-middle">
+ 
+                <div class="large-4 large-offset-2 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                     <p class="read bold">Onboarding</p>
                     <p class="read">New users are educated about mentorship, and how the app is designed to solve their problems.</p>
                     <p class="read accent">Onboarding introduces new features, vocabulary, and also alleviates some pre conveived notions. In this case, we want mentors to know that they don't have to be seasoned veterans to help, and mentees should understand that it's okay to ask for help.</p>   
                 </div>
                 
-                <div class="large-3 large-offset-1 cell">
+                <div class="large-3 large-offset-1 cell" nav-group="high-fidelity-prototype">
                     <img src="{{root}}assets/img/midojo/2_onboarding.png" class="vert-margin-image lightbox-enable">
                 </div>
                 
@@ -188,11 +185,11 @@ prev_name: Water Connection Transition
                 
                 
                 
-                <div class="large-3 large-offset-2 cell">
+                <div class="large-3 large-offset-2 cell" nav-group="high-fidelity-prototype" >
                     <img src="{{root}}assets/img/midojo/3_select_role.png" class="vert-margin-image lightbox-enable">
                 </div>
                 
-                <div class="large-4 large-offset-1 cell mockup-description align-self-middle">
+                <div class="large-4 large-offset-1 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                     <p class="read bold">Select Role</p>
                     <p class="read">The user chooses if they want to mentor or look for mentors. The app experience from here will be different for the mentor and the mentee.</p>
                 </div>
@@ -204,16 +201,16 @@ prev_name: Water Connection Transition
         <div class="section-wide-bg light-grey">
             <div class="grid-container">
                 <div class="grid-x skills grid-margin-x">
-                    <div class="large-8 large-offset-2 cell">
+                    <div class="large-8 large-offset-2 cell" nav-group="high-fidelity-prototype" >
                         <h2 class="name">Mentor Experience</h2>
                     </div>
                     
                     
-                    <div class="large-3 large-offset-2 cell">
+                    <div class="large-3 large-offset-2 cell" nav-group="high-fidelity-prototype" >
                         <img src="{{root}}assets/img/midojo/4_mentor_bio.png" class="vert-margin-image lightbox-enable">
                     </div>
                     
-                    <div class="large-4 large-offset-1 cell mockup-description align-self-middle">
+                    <div class="large-4 large-offset-1 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                         <p class="read bold">Gather useful information for matching</p>
                         <p class="read">Necessary metadata such as expertise, experience, and the location is taken by the new mentor. This will help us to match them with mentees. A live counter tells the approximate number of mentees they can be of use to with the information input.</p>
                         <p class="read accent">Filling forms is a tough task indeed. Social logins are provided to automate this as much as possible. Amusing elements like the people counter helps sustain the user longer.</p>
@@ -222,23 +219,23 @@ prev_name: Water Connection Transition
                     
                     
                     
-                    <div class="large-4 large-offset-2 cell mockup-description align-self-middle">
+                    <div class="large-4 large-offset-2 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                         <p class="read bold">Set your time commitment. More time ~ more mentees</p>
                         <p class="read">Mentors can assist more than one mentee, depending on the time they can expend. The mentees are assigned accordingly.</p>
                         <p class="read accent">Asking tough questions like this can nudge the mentor to think seriously about the mentorship program. The downside is ofcourse, abandonment at this stage. But it should positively affect the mentee experience. The illustration is live, as the user slides to a higher value, more "humaaans" are added.</p>
                     </div>
                     
-                    <div class="large-3 large-offset-1 cell">
+                    <div class="large-3 large-offset-1 cell" nav-group="high-fidelity-prototype" >
                         <img src="{{root}}assets/img/midojo/5_commitment.png " class="vert-margin-image lightbox-enable">
                     </div>
                     
                     
                     
-                    <div class="large-3 large-offset-2 cell">
+                    <div class="large-3 large-offset-2 cell" nav-group="high-fidelity-prototype" >
                         <img src="{{root}}assets/img/midojo/6_zero_state.png" class="vert-margin-image lightbox-enable">
                     </div>
                     
-                    <div class="large-4 large-offset-1 cell mockup-description align-self-middle">
+                    <div class="large-4 large-offset-1 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                         <p class="read bold">Ready to start helping! Spread the word</p>
                         <p class="read">A screen to show that the signup process is complete. Social share options are available.</p>
                         <p class="read accent">Designing this screen was a bit challenging. I wanted the mentor to have some form of positive experience after the tedious signup process. Perhaps social share might do the trick.</p>
@@ -246,28 +243,28 @@ prev_name: Water Connection Transition
                     
                     
                     
-                    <div class="large-4 large-offset-1 cell mockup-description align-self-middle">
+                    <div class="large-4 large-offset-1 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                         <p class="read bold">Smart way to select your mentees</p>
                         <p class="read">Mentor receives requests from the mentees in the app inbox.</p>
                         <p class="read accent">Research revealed that mentors shouldn't be seen as long term friends/guru. Mentors are more willing to help, if they have a good idea of what they're getting into. The mentees are prompted to draft a clear request, and the same is highlighted to the mentor.</p>
                     </div>
                     
-                    <div class="large-3 large-offset-1 cell">
+                    <div class="large-3 large-offset-1 cell" nav-group="high-fidelity-prototype" >
                         <img src="{{root}}assets/img/midojo/7_selecting_mentee.png" class="vert-margin-image lightbox-enable">
                     </div> 
-                    <div class="large-3 cell">
+                    <div class="large-3 cell" nav-group="high-fidelity-prototype" >
                         <img src="{{root}}assets/img/midojo/8_mentee_profile.png" class="vert-margin-image lightbox-enable">
                     </div> 
                     
                     
-                    <div class="large-3 large-offset-1 cell">
+                    <div class="large-3 large-offset-1 cell" nav-group="high-fidelity-prototype" >
                         <img src="{{root}}assets/img/midojo/17_mentor_chat.png" class="vert-margin-image lightbox-enable">
                     </div> 
-                    <div class="large-3 cell">
+                    <div class="large-3 cell" nav-group="high-fidelity-prototype" >
                         <img src="{{root}}assets/img/midojo/16_appreciation.png" class="vert-margin-image lightbox-enable">
                     </div> 
                     
-                    <div class="large-4 large-offset-1 cell mockup-description align-self-middle">
+                    <div class="large-4 large-offset-1 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                         <p class="read bold">Start helping & get "hooked"</p>
                         <p class="read accent">Mentors get the pleasure of earning "fans" on the way. The mentor-mentee relationship has the potential of forming a habit. (as define by Nir Eyal)</p>
                         <ul class="accent">
@@ -285,16 +282,16 @@ prev_name: Water Connection Transition
         
         <div class="grid-container"><div class="grid-x skills grid-margin-x">
             
-            <div class="large-8 large-offset-2 cell">
+            <div class="large-8 large-offset-2 cell" nav-group="high-fidelity-prototype" >
                 <h2 class="name">Mentee Experience</h2>
             </div>
             
             
-            <div class="large-3 large-offset-2 cell">
+            <div class="large-3 large-offset-2 cell" nav-group="high-fidelity-prototype" >
                 <img src="{{root}}assets/img/midojo/10_mentor_list.png" class="vert-margin-image lightbox-enable">
             </div>
             
-            <div class="large-4 large-offset-1 cell mockup-description align-self-middle">
+            <div class="large-4 large-offset-1 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                 <p class="read bold">Finding the right mentor</p>
                 <p class="read">Once the mentee has filled the appropriate information, they look through the list of mentors on the platform. To assist their search, description and key competencies are displayed with their profile. Since the sorting process can be overwhelming, profiles can be starred to mark and come back later.</p>
             </div>
@@ -304,22 +301,22 @@ prev_name: Water Connection Transition
             
             
             
-            <div class="large-4 large-offset-2 cell mockup-description align-self-middle">
+            <div class="large-4 large-offset-2 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                 <p class="read bold">Relevant Results. Quick!</p>
                 <p class="read">MiDojo offers mentors to further ones' fitness goals and hobbies too. Powerful search options can be used to get to the right mentor.</p>
                 <p class="read accent">Based on the mentee's perference, available mentors are shown. A reasonable set of filters are available to help narrow down. Filters are limited in their power, to let user to explore more. A star feature is available to scan and shortlist.</p>
             </div>
             
-            <div class="large-3 large-offset-1 cell">
+            <div class="large-3 large-offset-1 cell" nav-group="high-fidelity-prototype" >
                 <img src="{{root}}assets/img/midojo/11_mentor_filter.png" class="vert-margin-image lightbox-enable">
             </div>
             
             
-            <div class="large-3 large-offset-2 cell">
+            <div class="large-3 large-offset-2 cell" nav-group="high-fidelity-prototype" >
                 <img src="{{root}}assets/img/midojo/12_mentor_profile.png" class="vert-margin-image lightbox-enable">
             </div>
             
-            <div class="large-4 large-offset-1 cell mockup-description align-self-middle">
+            <div class="large-4 large-offset-1 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                 <p class="read bold">Discover the future you</p>
                 <p class="read">Apart from linking their Linkedin and Behance profile, mentors are allowed to write a bit more about why they want to mentor and what they seek out of it, and any additional data. A basic gallery is also provided to showcase work without leaving the app.</p>
                 <p class="read accent">The contact mentor is not available on the search result page. This is to nudge them into glancing at the mentor profile before they can apply.</p>
@@ -327,73 +324,73 @@ prev_name: Water Connection Transition
             
             
             
-            <div class="large-4 large-offset-2 cell mockup-description align-self-middle">
+            <div class="large-4 large-offset-2 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                 <p class="read bold">Personalized requests</p>
                 <p class="read">Depending on the volume of applications, mentors can be picky. Questions act as a set of guidelines to allow mentees to approach more effectively.</p>
             </div>
             
-            <div class="large-3 large-offset-1 cell">
+            <div class="large-3 large-offset-1 cell" nav-group="high-fidelity-prototype" >
                 <img src="{{root}}assets/img/midojo/13_contact_mentor.png" class="vert-margin-image lightbox-enable">
             </div>
             
-            <div class="large-3 large-offset-1 cell">
+            <div class="large-3 large-offset-1 cell" nav-group="high-fidelity-prototype" >
                 <img src="{{root}}assets/img/midojo/14_first_chat.png" class="vert-margin-image lightbox-enable">
             </div>
             
-            <div class="large-3 cell">
+            <div class="large-3 cell" nav-group="high-fidelity-prototype" >
                 <img src="{{root}}assets/img/midojo/15_set_meeting.png" class="vert-margin-image lightbox-enable">
             </div>
             
-            <div class="large-4 large-offset-1 cell mockup-description align-self-middle">
+            <div class="large-4 large-offset-1 cell mockup-description align-self-middle" nav-group="high-fidelity-prototype" >
                 <p class="read bold">First Chat</p>
                 <p class="read">This is the first chat between two strangers! To make the first chat a bit comfortable, suggested topics are mentioned as help text. The two are prompted to introduce themselves, discuss their interests and plan a meeting.</p>
                 <p class="read accent">Some automation may be introduced to suggest meeting times and places, but I decided to keep it simple to avoid distractions.</p>
             </div>
             
             <div class="large-8 large-offset-2 cell">
-                <h2 class="name" nav-title id="research">The Research</h2>
+                <h2 class="name" nav-group="research" nav-group id="research">The Research</h2>
             </div>
             
-            <div class="large-offset-2 large-8 cell">
+            <div class="large-offset-2 large-8 cell" nav-group="research" >
                 <p class="read">As an aspiring UX Designer, the concept of mentorship isn’t alien to me. I have heard people talk about it on podcasts and write in lengths about it on their blog posts. I have had the opportunity of working with some fantastic designers and researchers over the past few years, and I have reached out to them in times of need. However, I had been apprehensive about finding mentors myself. For the sake of this project, I started with a blank slate, assuming I knew nothing about mentorship for career growth (well, there was a lot that I didn’t know). I also looked at mentorship without the UX lens. Mentorship is obviously, practiced in other professions as well.</p>
                 
                 <p class="read bold top-margin-30">Secondary Research</p>
                 <p class="read">Several journals, articles, blogs and online boards helped me discover different perspectives on mentorship.</p>
             </div>
             
-            <div class="large-4 cell">
+            <div class="large-4 cell" nav-group="research" >
                 <figure class="article-image">
                     <img src="{{root}}assets/img/midojo/notes1.png" class="lightbox-enable">
                 </figure>
             </div>
-            <div class="large-4 cell">
+            <div class="large-4 cell" nav-group="research" >
                 <figure class="article-image">
                     <img src="{{root}}assets/img/midojo/notes2.png" class="lightbox-enable">
                 </figure>
             </div>
-            <div class="large-4 cell">
+            <div class="large-4 cell" nav-group="research" >
                 <figure class="article-image">
                     <img src="{{root}}assets/img/midojo/notes3.png" class="lightbox-enable">
                 </figure>
             </div>
-            <div class="large-4 cell">
+            <div class="large-4 cell" nav-group="research" >
                 <figure class="article-image">
                     <img src="{{root}}assets/img/midojo/notes4.png" class="lightbox-enable">
                 </figure>
             </div>
-            <div class="large-4 cell">
+            <div class="large-4 cell" nav-group="research" >
                 <figure class="article-image">
                     <img src="{{root}}assets/img/midojo/collage.png" class="lightbox-enable">
                 </figure>
             </div>
             
-            <div class="large-offset-2 large-8 cell top-margin-150">
+            <div class="large-offset-2 large-8 cell top-margin-150" nav-group="research" >
                 <p class="read bold">Primary Research</p>
                 <p class="read">To gain some first-hand knowledge on this, I contacted one senior UX Designer and two junior designers. Some of the finding/interesting quotes:</p>
             </div>
             
             
-            <div class="large-5 large-offset-1 cell">
+            <div class="large-5 large-offset-1 cell" nav-group="research" >
                 <p class="read bold">Mentor: A Chief Design Officer with 10+ years of experience</p>
                 <ul class="small-points">
                     <li><p class="read">"It’s my way of giving back to the community. I remember my struggle when I was working as a visual designer."</p></li>
@@ -404,7 +401,7 @@ prev_name: Water Connection Transition
                 </ul>
             </div>
             
-            <div class="large-5 cell">
+            <div class="large-5 cell" nav-group="research" >
                 <p class="read bold">Mentee: A design student who met her mentor at her workplace</p>
                 <ul class="small-points">    
                     <li><p class="read">"We had a formal mentorship program. But that was only on paper. All the interns interacted more with others."</p></li>
@@ -415,11 +412,11 @@ prev_name: Water Connection Transition
                 </ul>
             </div>
             
-            <div class="large-8 large-offset-2 cell">
-                <h2 class="name" nav-title id="key-findings">Key Findings</h2>
+            <div class="large-8 large-offset-2 cell" >
+                <h2 class="name" nav-group="key-findings" id="key-findings">Key Findings</h2>
             </div>
             
-            <div class="large-offset-2 large-8 cell">
+            <div class="large-offset-2 large-8 cell" nav-group="key-findings" >
                 <p class="read bold">What drives a Mentor?</p>
                 <ul>
                     <li><p class="read">"Do unto others as you would have them do unto you." Mentors need not be expert in their field, they can also be a few years senior to the mentee. It is possible that they might be seeking mentorship themselves. Mentorship then, is a way to give back to the community.</p></li>
@@ -437,10 +434,10 @@ prev_name: Water Connection Transition
             </div>
             
             <div class="large-8 large-offset-2 cell">
-                <h2 class="name" nav-title id="synthesis">Synthesis</h2>
+                <h2 class="name" nav-group="synthesis" id="synthesis">Synthesis</h2>
             </div>
             
-            <div class="large-offset-2 large-8 cell">
+            <div class="large-offset-2 large-8 cell" nav-group="synthesis">
                 <p class="read">I used the following methods to gain a better understanding of the information I got from the research</p>
                 
                 <p class="read bold">From To table</p>
@@ -486,12 +483,12 @@ prev_name: Water Connection Transition
                 
             </div>
             
-            <div class="large-8 large-offset-2 cell">
+            <div class="large-8 large-offset-2 cell" nav-group="synthesis">
                 <p class="read bold">Love letter & Breakup letter</p>
                 <p class="read">I wrote a love letter and a breakup letter to my application from the perspective of the mentor and mentee. This helped me prioritize the requirements.</p>
             </div>
             
-            <div class="large-4 cell large-offset-2">
+            <div class="large-4 cell large-offset-2" nav-group="synthesis">
                 
                 <figure class="article-image">
                     <img src="{{root}}assets/img/midojo/ll1.png" class="">
@@ -503,48 +500,48 @@ prev_name: Water Connection Transition
                 </figure>
             </div>
             
-            <div class="large-8 large-offset-2 cell">
-                <h2 class="name" nav-title id="before-mockup">Before the mockups</h2>
+            <div class="large-8 large-offset-2 cell" nav-group="synthesis">
+                <h2 class="name" nav-group="before-mockup" id="before-mockup">Before the mockups</h2>
                 <p class="read bold">Storyboarding</p>
             </div>
             
-            <div class="large-4 large-offset-2 cell">
+            <div class="large-4 large-offset-2 cell" nav-group="before-mockup">
                 <figure class="article-image">
                     <img src="{{root}}assets/img/midojo/storyboard1.JPG" class="">
                 </figure>
             </div>
-            <div class="large-4 cell">
+            <div class="large-4 cell" nav-group="before-mockup">
                 <figure class="article-image">
                     <img src="{{root}}assets/img/midojo/storyboard2.JPG"  class=""> 
                 </figure>
             </div>
             
-            <div class="large-8 large-offset-2 cell">
+            <div class="large-8 large-offset-2 cell" nav-group="before-mockup">
                 <p class="read bold">User Flows</p>
             </div>
             
-            <div class="large-4 cell">
+            <div class="large-4 cell" nav-group="before-mockup">
                 <figure class="article-image center">
                     <figcaption>Onboarding</figcaption>
                     <img src="{{root}}assets/img/midojo/userflow-first-time-onboarding.png" class="">
                 </figure>
             </div>
-            <div class="large-4 cell">
+            <div class="large-4 cell" nav-group="before-mockup">
                 <figure class="article-image center">
                     <figcaption>Mentor selects mentees</figcaption>
                     <img src="{{root}}assets/img/midojo/userflow-mentor-invite.png"  class=""> 
                 </figure>
             </div>
-            <div class="large-4 cell">
+            <div class="large-4 cell" nav-group="before-mockup">
                 <figure class="article-image center">
                     <figcaption>Scheduling meetings and mentoring</figcaption>
                     <img src="{{root}}assets/img/midojo/userflow-meeting.png"  class=""> 
                 </figure>
             </div>
             
-            <div class="large-8 large-offset-2 cell">
-                <h2 class="name" nav-title id="next-steps">Next steps</h2>
-                <ul>
+            <div class="large-8 large-offset-2 cell" >
+                <h2 class="name" nav-group="next-steps" id="next-steps">Next steps</h2>
+                <ul nav-group="next-steps">
                     <li><p class="read">Conduct more interviews. Mentorship varies with profession.</p></li>
                     <li><p class="read">Conceptualize a desktop as well. It makes sense to have a desktop app / website for this system. Since significant reading, writing is invoved.</p></li>
                     <li><p class="read">Test and iterate!</p></li>
@@ -552,8 +549,8 @@ prev_name: Water Connection Transition
             </div>
             
             <div class="large-8 large-offset-2 cell">
-                <h2 class="name" nav-title id="learnings">Some learnings</h2>
-                <ul>
+                <h2 class="name" nav-group="learnings" id="learnings">Some learnings</h2>
+                <ul nav-group="learnings">
                     <li><p class="read">Some extra synthesis steps, can help get more insights from existing data.</p></li>
                     <li>
                         <p class="read">UI design can take a lot of time.</p>

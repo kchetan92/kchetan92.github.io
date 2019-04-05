@@ -376,7 +376,9 @@ figure.right-inline {
 #sticky-nav {
 	position: -webkit-sticky;
 	position: sticky;
-	top: 90px;
+	display: inline-block;
+	top: 80px;
+	margin-top: 120px;
 	ul {
 		list-style-type: none;
 		padding-left: 5px;
@@ -386,9 +388,12 @@ figure.right-inline {
 		color: #888;
 		text-decoration: none;
 	}
+	li a{
+		transition: all 0.3s ease-in;
+	}
 	li.active {
-		a {
-			color: red;
+		a, a:hover {
+			color: #006064;
 		}
 	}
 }

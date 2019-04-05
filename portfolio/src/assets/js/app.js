@@ -92,55 +92,72 @@ function initHeader(){
 	}
 }
 
+function isVisible(el) {
+    const rect = el.getBoundingClientRect();
+    // DOMRect { x: 8, y: 8, width: 100, height: 100, top: 8, right: 108, bottom: 108, left: 8 }
+    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+    const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
+
+    // http://stackoverflow.com/questions/325933/determine-whether-two-date-ranges-overlap
+    const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
+    const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
+
+    return (vertInView && horInView);
+}
+
 function initNav() {
-    const allTitles = document.querySelectorAll('[nav-title]');
-    let navElement = document.getElementById('sticky-nav');
+    const allGroupElements = document.querySelectorAll('[nav-group]');
     
-    if(navElement && allTitles.length > 0) {
-        navElement = navElement.getElementsByTagName('ul')[0]
-    } else {
-        return;
-    }
+    let navElement = document.getElementById('sticky-nav');
+    navElement = navElement ? navElement.getElementsByTagName('ul')[0] : null;
+    if(!navElement) return;
 
-    const dir = []
+    const groups = {}
 
-    allTitles.forEach(el => {
-        const newElement = document.createElement('li');
-        newElement.innerHTML = `<a href="#${el.getAttribute("id")}">${el.innerText}</a>`;
-        navElement.appendChild(newElement);
-        dir.push({
-            "nav": newElement,
-            "page": document.getElementById(el.getAttribute("id"))
-        })
-    })
+    allGroupElements.forEach(el => {
+        const thisLabel = el.getAttribute("nav-group")
+        if(typeof(groups[thisLabel]) === "undefined") {
+            groups[thisLabel] = {};
+            groups[thisLabel]["labelName"] = thisLabel;
+            groups[thisLabel]["members"] = []
 
-    setInterval(function(){
-
-        const newActive = [];
-        
-        dir.forEach(el => {
-            const thisTop = el.page.getBoundingClientRect().top;
-            if(thisTop > 0 && thisTop < (window.innerHeight - 100)) {
-                //visible
-                newActive.push(el);
+            const id = document.getElementById(thisLabel);
+            if(id) {
+                groups[thisLabel]["humanName"] = id.innerText;
             }
-        });
-
-        if(newActive.length > 0) {
-            dir.forEach(el => {
-                if(el.nav.classList.contains("active")) {
-                    el.nav.classList.remove("active");
-                }
-            })
-            newActive.forEach(el => {
-                el.nav.classList.add("active");
-            })
         }
 
+        groups[thisLabel]["members"].push(el);
+        
+    })
+
+    console.log(groups);
+
+    Object.keys(groups).forEach(el => {
+        const newElement = document.createElement('li');
+        newElement.innerHTML = `<a href="#${groups[el]["labelName"]}">${groups[el]["humanName"] || "link"}</a>`;
+        groups[el]["navElement"] = newElement;
+        navElement.appendChild(newElement);
+    });
+
+    setInterval(function(){
+        Object.keys(groups).forEach(el => {
+            let thisActive = false;
+            groups[el].members.forEach(m => {
+                if(isVisible(m)) {
+                    thisActive = true;
+                }
+            });
+            if(thisActive && !groups[el].navElement.classList.contains("active")) {
+                groups[el].navElement.classList.add("active");
+            } else if(!thisActive && groups[el].navElement.classList.contains("active")) {
+                groups[el].navElement.classList.remove("active");
+            }   
+        })
+
     }, 300)
-
-
 }
+
 
 function initSlider(){
 
@@ -200,8 +217,6 @@ function highlightNavigate(){
 }
 
 function initLightBox() {
-    // oops, something went wrong;  
-    return;
 
     const allImages = document.getElementsByClassName("lightbox-enable");
     const modal = document.getElementById("lightbox");
@@ -248,9 +263,9 @@ $(document).ready(function(){
 
 	initHeader();
     initSlider();
-    initLightBox();
+    //initLightBox();
     highlightNavigate();
-    //initNav();
+    initNav();
 
     document.querySelectorAll("img[data-src]").forEach(function(el){
         console.log('img lazyloaded ');
