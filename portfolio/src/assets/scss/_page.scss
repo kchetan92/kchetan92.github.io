@@ -379,10 +379,16 @@ figure.right-inline {
 	position: sticky;
 	display: inline-block;
 	top: 80px;
-	margin-top: 120px;
+	margin-top: 0;
+	height: 0;
+	width: 120px;
 	ul {
 		list-style-type: none;
 		padding-left: 5px;
+		line-height: 1;
+	}
+	li {
+		padding-bottom: 10px;
 	}
 	a {
 		font-size: 12px;
@@ -390,7 +396,7 @@ figure.right-inline {
 		text-decoration: none;
 	}
 	li a{
-		transition: all 0.3s ease-in;	
+		transition: all 0.3s ease-in;
 	}
 	li.active {
 		a, a:hover {

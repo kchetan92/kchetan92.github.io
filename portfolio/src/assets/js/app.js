@@ -123,7 +123,7 @@ function initNav() {
 
             const id = document.getElementById(thisLabel);
             if(id) {
-                groups[thisLabel]["humanName"] = id.innerText;
+                groups[thisLabel]["humanName"] = id.getAttribute("nav-name") || id.innerText;
             }
         }
 
