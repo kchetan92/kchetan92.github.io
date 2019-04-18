@@ -221,7 +221,7 @@
     .brushybuddy {
         margin-bottom: 300px;
         @include breakpoint(medium down) {
-            margin-bottom: 200px;
+            margin-bottom: 40px;
         }
         .image-container > img {
             top: -40px;
@@ -230,7 +230,7 @@
             max-height: 450px;
             @include breakpoint(medium down) {
                 height: 200px;
-                top: 40px;
+                top: 0;
             }
         }
     }
@@ -241,5 +241,14 @@
     img {
         height: 200px;
         width: auto;
+        @include breakpoint(medium down) {
+            height: 150px;
+            top: 0;
+        }
+    }
+    @include breakpoint(medium down) {
+        &>div {
+            margin-bottom: 100px;
+        }
     }
 }
