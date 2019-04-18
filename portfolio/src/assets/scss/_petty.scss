@@ -358,6 +358,12 @@ ul.small-points {
 	}
 }
 
+@include breakpoint(medium down) {
+	body > * {
+		overflow-x: hidden;
+	}
+}
+
 
 
 
