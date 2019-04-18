@@ -166,6 +166,9 @@ img[data-src] {
 		.bg {	
 			position: relative;
 			margin-bottom: 10vh;
+			@include breakpoint(medium down) {
+				margin-bottom: 20vh;
+			}
 		}
 		.concept {
 			img {
@@ -180,6 +183,12 @@ img[data-src] {
 			img {
 				height: 55vh;
 				width: auto;
+				@include breakpoint(medium down) {
+					position: relative;
+					display: block;
+					margin: 100px auto 0;
+					bottom: 0;
+				}
 			}
 		}
 	}
@@ -382,6 +391,9 @@ figure.right-inline {
 	margin-top: 0;
 	height: 0;
 	width: 120px;
+	@include breakpoint(medium down) {
+		display: none;
+	}
 	ul {
 		list-style-type: none;
 		padding-left: 5px;

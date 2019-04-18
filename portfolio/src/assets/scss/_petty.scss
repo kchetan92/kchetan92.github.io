@@ -116,6 +116,9 @@ figure.chapter-image.down-30 {
 
 .section-wide-bg {
 	margin-top: 200px;
+	@include breakpoint(medium down) {
+		margin-top: 40px;
+	}
 	&.light-grey {
 		background: #f0f0f0;
 	}
@@ -173,6 +176,9 @@ figure.chapter-image.down-30 {
 		width:40%;	
 		overflow: hidden;
 		display: inline-block;
+		@include breakpoint(medium down) {
+			width: auto;
+		}
 		&.full {
 			width: inherit;
 		}
@@ -189,6 +195,9 @@ figure.chapter-image.down-30 {
 		margin: 15px;
 		width: 50%;
 		vertical-align: top;
+		@include breakpoint(medium down) {
+			width: auto;
+		}
 		.read {
 			margin-top: 0;
 		}
@@ -209,6 +218,9 @@ figure.chapter-image.down-30 {
 		margin: 0 auto;
 		img {
 			width: 25%;
+			@include breakpoint(medium down) {
+				width: 30%;
+			}
 		}
 	}
 }
@@ -244,6 +256,10 @@ figure.chapter-image.down-30 {
 	.gallery-padding {
 		> * {
 			padding: 30px;
+			@include breakpoint(medium down) {
+				width: auto;
+				padding: 5px 0
+			}
 		}
 	}
 	.introduce {
